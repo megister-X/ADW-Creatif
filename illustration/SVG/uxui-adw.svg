@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 112.76px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #c69c6d;
+        stroke-width: .07px;
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        letter-spacing: .02em;
+      }
+
+      .cls-7 {
+        fill: #662d91;
+      }
+
+      .cls-8 {
+        fill: #f7931e;
+      }
+
+      .cls-2, .cls-9 {
+        fill: #0ffff0;
+      }
+
+      .cls-5 {
+        fill: #b3b3b3;
+        stroke-width: .05px;
+      }
+
+      .cls-10 {
+        fill: #1b1464;
+      }
+
+      .cls-11 {
+        fill: #606060;
+      }
+    </style>
+  </defs>
+  <rect class="cls-11" x="14.37" y="11.15" width="471.26" height="482.63"/>
+  <rect class="cls-7" x="31.74" y="48.28" width="436.53" height="75.45"/>
+  <g>
+    <rect class="cls-5" x="51.08" y="138.69" width="77.84" height="29.34"/>
+    <rect class="cls-5" x="131.08" y="138.69" width="77.84" height="29.34"/>
+    <rect class="cls-5" x="211.08" y="138.69" width="77.84" height="29.34"/>
+    <rect class="cls-5" x="291.08" y="138.69" width="77.84" height="29.34"/>
+    <rect class="cls-5" x="371.08" y="138.69" width="77.84" height="29.34"/>
+  </g>
+  <g>
+    <rect class="cls-8" x="164.52" y="313.85" width="134.61" height="86.23"/>
+    <rect class="cls-8" x="313.88" y="313.85" width="134.61" height="86.23"/>
+  </g>
+  <rect class="cls-10" x="42.57" y="409.47" width="414.86" height="68.17"/>
+  <g>
+    <rect class="cls-4" x="31.74" y="188.99" width="119.52" height="86.23"/>
+    <g>
+      <g>
+        <rect x="31.82" y="281.23" width="119.35" height="2.71"/>
+        <path class="cls-3" d="M151.08,281.31v2.53H31.91v-2.53h119.17m.17-.17H31.74v2.88h119.52v-2.88h0Z"/>
+      </g>
+      <g>
+        <rect x="31.84" y="292.52" width="119.32" height="3.72"/>
+        <path class="cls-3" d="M151.05,292.62v3.52H31.94v-3.52h119.11m.2-.2H31.74v3.92h119.52v-3.92h0Z"/>
+      </g>
+      <g>
+        <rect x="31.83" y="304.54" width="119.33" height="3.27"/>
+        <path class="cls-3" d="M151.07,304.64v3.08H31.93v-3.08h119.14m.19-.19H31.74v3.46h119.52v-3.46h0Z"/>
+      </g>
+      <g>
+        <rect x="31.82" y="316.63" width="119.35" height="2.71"/>
+        <path class="cls-3" d="M151.08,316.71v2.54H31.91v-2.54h119.17m.17-.17H31.74v2.89h119.52v-2.89h0Z"/>
+      </g>
+    </g>
+  </g>
+  <g>
+    <circle class="cls-9" cx="423.84" cy="252.7" r="44.43"/>
+    <circle class="cls-9" cx="320.82" cy="252.7" r="44.43"/>
+    <circle class="cls-9" cx="217.8" cy="252.7" r="44.43"/>
+  </g>
+  <text class="cls-1" transform="translate(47.94 144.15)"><tspan x="0" y="0">UX </tspan><tspan class="cls-6" x="161.24" y="0">E</tspan><tspan x="218.52" y="0">T UI</tspan></text>
+  <text class="cls-2" transform="translate(39.51 136.49)"><tspan x="0" y="0">UX </tspan><tspan class="cls-6" x="161.24" y="0">E</tspan><tspan x="218.52" y="0">T UI</tspan></text>
+</svg>
