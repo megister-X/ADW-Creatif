@@ -107,7 +107,9 @@ a {
 a img {
 	width: 50px;
 }
-
+ul{
+	align-self: center;
+}
 li {
 	list-style: none;
 	font: var(--pFont);
@@ -429,8 +431,8 @@ p.text {
 	color: rgba(255, 255, 0, 1);
 	font-weight: 500;
 	width: min-content;
-
-	background-color: #c69c6d;
+	width: 500px;
+	background-color: rgba(198, 156, 109, 0.37);
 }
 
 .container__services .nav-central {
@@ -439,6 +441,7 @@ p.text {
 	margin-top: 3px;
 	box-shadow: 0px 0px 5px 0px yellow;
 	align-items: flex-start;
+	background-color: #f7931e;
 }
 
 .nav-central a {
