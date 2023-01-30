@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="col-md-6 col-lg-4 mb-5 blog-post">
+        <a class="card px-4"
+            href="https://thibautsoufflet.fr/blog/sapar-la-marque-bordelaise-qui-revalorise-les-vetements/">
+            <img src="https://thibautsoufflet.fr/wp-content/uploads/2022/12/sapar-vetements-economie-circulaire-bordeaux-768x308.jpg"
+                class="img-fluid wp-post-image"
+                alt="SAPAR : La marque bordelaise qui revalorise les vêtements d’aujourd’hui, pour demain."
+                decoding="async" loading="lazy"
+                srcset="https://thibautsoufflet.fr/wp-content/uploads/2022/12/sapar-vetements-economie-circulaire-bordeaux-768x308.jpg 768w, https://thibautsoufflet.fr/wp-content/uploads/2022/12/sapar-vetements-economie-circulaire-bordeaux-300x120.jpg 300w, https://thibautsoufflet.fr/wp-content/uploads/2022/12/sapar-vetements-economie-circulaire-bordeaux.jpg 1024w"
+                sizes="(max-width: 768px) 100vw, 768px" data-pagespeed-url-hash="3620385389"
+                onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="768" height="308">
+            <div class="infos my-3">
+                <span class="categorie">
+                    Start Up
+                </span>
+                <span class="date">
+                    29 décembre 2022
+                </span>
+            </div>
+            <div class="description">
+                <h3>SAPAR : la marque bordelaise qui revalorise vos vêtements</h3>
+                <p>SAPAR propose un service de collecte à domicile, gratuit, des vêtements que nous ne portons plus,
+                    en...
+                </p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
+ -->
+
+    <!DOCTYPE HTML>
+<html>
+<head>
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+	
+</head>
+<style>
+body{
+	background-color:white;
+}
+.display{
+	background-color:red;
+}
+	
+</style>
+<body>
+<h2 style="color:green;">GeeksforGeeks</h2>
+	
+<div class="topics">
+<ol>
+	<li><a href="#"><b>Searching</b></a>
+		<ul>
+		<li><a href="#">Linear Search</a></li>
+		<li><a href="#">Binary Search</a></li>
+		</ul>
+	</li>
+	<li><a href="#"><b>Sorting</b></a>
+		<ul>
+			<li><a href="#">Bubble Sort</a></li>
+			<li><a href="#">Merge Sort</a>
+				<ul>
+					<li><a href="#"><i>Recursive Merge Sort</i></a></li>
+					<li><a href="#"><i>Iterative Merge Sort</i></a></li>
+				</ul>
+			</li>
+			<li><a href="#">Selection Sort</a></li>
+			<li><a href="#">Insertion Sort</a>
+		</ul>
+	</li>
+	<li><a href="#"><b>Tree</b></a>
+	<ul>
+		<li><a href="#">Binary Tree</a></li>
+		<li><a href=" #">Binary Search Tree</a></li>
+		</ul>
+	</li>
+
+</ol>
+</div>
+
+<div class="display">
+	<div class="syllabus">
+	<a href="#">GeeksforGeeks / </a>
+	</div>
+</div>
+		
+
+<script type="text/javascript">
+
+$('.topics a').on('click', function() {
+	//selecting the syllabus class
+	$select = $('<div class="syllabus"></div>');
+	$(this).parents('li').each(function(n, li) {
+		//Adding / to each anchor tag of li
+		$select.prepend(' / ',$(li).children('a').clone());
+	});
+	// Displaying the hierarchical order of pages.
+	$('.display').html(
+	$select.prepend('<a href="#</a>'));
+})
+
+</script>
+</body>
+
+</html>
+

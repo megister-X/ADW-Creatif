@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui suis je?</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/entete.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<!-- <frameset rows="20%, 60%, 20%">
+    <frame name="last article" src="fenetre02.html" />
+    <frame name="last article" src="fenetre02.html" />
+    <frame name="last article" src="fenetre02.html" />
+</frameset> -->
+
+<body>
+    <div class="global flex--column">
+        <!-- ---------- HEADER ---------- -->
+        <header>
+            <!-- <figure class="logo__container">
+                <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
+            </figure> -->
+            <figure class="banner__container">
+                <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+                    Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+                    Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+
+            </figure>
+            <figure class="avatar__container">
+                <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+            </figure>
+        </header>
+
+
+        <!-- --------- NAVIGATION ----- -->
+        <div class="navigation">
+            <div class="nav-deco"></div>
+            <div class="sub-nav">
+                <span></span>
+                <nav class="sub-nav__menu myTopnav flex--row" id="topnav">
+                    <a href="index.html" class="container active">
+                        <figure class="overlayImg">
+                            <!-- les icônes utilisées du sites flaticon (stickers) -->
+                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>home</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Notre page d'accueil
+                            </p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>ADW</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                L'histoire, les valeurs, les collaborateurs et notre travail
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="gallerie.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Gallerie</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="cv.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Mon CV</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="faq.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Q & R</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Questions fréquemment posées
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Contact</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fil d'Ariane -->
+        <div class="display" style="background-color: cyan; width: 100%;">
+            <div class="portfolio">
+                <a href="#">ADW. Home / </a>
+            </div>
+        </div>
+
+
+
+        <main class="adw--about flex--column">
+            <aside class="my_id">
+                <article class="my_id--article">
+                    <section class="sect-01 flex--column">
+                        <h2 class="texte-curvi flex--column ">
+                            <div class="warp" aria-labelledby="warp-label">
+                                <span id="warp-label" class="warp__placeholder">
+                                    Alain. Designer. Web.
+                                </span>
+
+                                <span class="warp__lettres flex--row" aria-role="presentation">
+                                    <span class="warp__0">
+                                        A
+                                    </span>
+                                    <span class="warp__1">
+                                        l
+                                    </span>
+                                    <span class="warp__2">
+                                        a
+                                    </span>
+                                    <span class="warp__3">
+                                        i
+                                    </span>
+                                    <span class="warp__4">
+                                        n
+                                    </span>
+                                    <span class="warp__5">
+                                        .
+                                    </span>
+                                    <span class="warp__6">
+
+                                    </span>
+                                    <span class="warp__7">
+                                        D
+                                    </span>
+                                    <span class="warp__8">
+                                        e
+                                    </span>
+                                    <span class="warp__9">
+                                        s
+                                    </span>
+                                    <span class="warp__10">
+                                        i
+                                    </span>
+                                    <span class="warp__11">
+                                        g
+                                    </span>
+                                    <span class="warp__12">
+                                        n
+                                    </span>
+                                    <span class="warp__13">
+                                        e
+                                    </span>
+                                    <span class="warp__14">
+                                        r
+                                    </span>
+                                    <span class="warp__15">
+                                        .
+                                    </span>
+                                    <span class="warp__16">
+
+                                    </span>
+                                    <span class="warp__17">
+                                        W
+                                    </span>
+                                    <span class="warp__18">
+                                        e
+                                    </span>
+                                    <span class="warp__19">
+                                        b
+                                    </span>
+                                    <span class="warp__20">
+                                        .
+                                    </span>
+                                </span>
+                            </div>
+                        </h2>
+                        <div class="avatar__cercle flex--column">
+                            <figure>
+                                <img src="images/avatar.jpg" alt="">
+                            </figure>
+                        </div>
+                        <p class="texte-norm">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Similique corrupti porro commodi voluptatem optio necessitatibus magnam? Voluptas,
+                            necessitatibus! Magnam, veniam.
+                        </p>
+                    </section>
+
+                    <section class="sect--2">
+                    </section>
+                </article>
+            </aside>
+
+            <section class="associers">
+                <div class="photo__associers">
+                    <figure class="photo__associer--01">
+                        <img src="images/hut1.png" alt="" class="associer--1" width="100%" height="auto">
+                        <figcaption>Barbara Dupond</figcaption>
+                    </figure>
+                </div>
+                <div class="presentation__associer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rem sed exercitationem fugiat deserunt natus? Reiciendis ut labore soluta,
+                    deserunt saepe voluptatibus, exercitationem natus praesentium quae error eius delectus autem.
+                    Reprehenderit numquam labore cupiditate voluptates aliquid quaerat repudiandae aut molestias
+                    distinctio?
+                    Illum nihil repellendus eveniet dicta laudantium sed placeat accusantium
+                    quaerat sunt consequuntur odio veritatis,
+                    voluptas dolor debitis cupiditate assumenda veniam voluptatibus unde non alias.
+                    Est, veritatis?
+                    Placeat deleniti nulla culpa officiis laborum, asperiores ducimus, eius,
+                    ipsum modi fugit eum soluta. Fugiat consequuntur esse libero earum facere maxime
+                    quo non et asperiores a. Voluptates laudantium aut laborum, illum eum at veniam sed dicta.
+                    Maxime, fugit quas. Tenetur labore impedit quis numquam,
+                    quam recusandae corrupti porro dolorem voluptas quae!
+                    Amet ab adipisci ipsam nam dignissimos cumque facilis et laborum placeat explicabo,
+                    voluptatem aliquid distinctio unde molestiae inventore architecto necessitatibus
+                    culpa mollitia iure. Ullam sit maxime
+                    quos rerum provident id ad consequuntur assumenda eos iure
+                    quisquam quas iusto distinctio est quo adipisci ipsum a commodi earum autem,
+                    velit dolore! Odit voluptatum ipsam doloremque aperiam cupiditate ducimus quasi!
+                    Repellat illo totam consequatur,
+                    libero maxime molestiae vel ratione veritatis sapiente quos,
+                    rem vitae harum ducimus cumque!
+                    Harum ut temporibus quae. Libero ex quisquam veritatis iusto.
+                </div>
+                <figure class="travail__associer">
+                    <img src="images/hut1.png" alt="" class="associer__activiter" width="100%" height="auto">
+                    <figcaption>
+                        Responsable de marketing digital
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <!-- ---------- FOOTER ---------- -->
+        <footer>
+            <section class="info-coord-legal">
+                <!-- info  -->
+                <div class="info">
+                    <div class="coord card-info">
+                        <h3>Coordonnées</h3>
+                        <div class="card-info__service flex--column">
+                            <p>Rue de Namur, 5</p>
+                            <p>1300 Wavre</p>
+                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                            <a href="https://www.adw.com">www.adw.com</a>
+                        </div>
+                    </div>
+                    <div class="about card-info">
+                        <h3>About us</h3>
+                        <div class="card-info__service flex--column">
+                            <p>
+                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
+                                visibilité sur les réseaux sociaux et sur internet.
+                                une équipe passionnée, jeune et polyvalente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service card-info">
+                        <h3>Services</h3>
+                        <div class="card-info__service flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Infographie</li>
+                                <li>Retouche photo</li>
+                                <li>Ergonomie UX UI</li>
+                                <li>Création de site internet</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact card-info">
+                        <h3>Contact et order</h3>
+                        <div class="card- flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Devis</li>
+                                <li>Charte Graphique</li>
+                                <li>Maquettage de site web</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reseaux  -->
+                <div class="reseaux-sociaux">
+                    <a class="youtube" href="#">
+                        <i class="fa-brands fa-youtube"></i>Youtube
+                    </a>
+                    <a class="instagram" href="#">
+                        <i class="fa-brands fa-square-instagram"></i>Instagram
+                    </a>
+
+                    <a class="facebook" href="#">
+                        <i class="fa-brands fa-square-facebook"></i>facebook
+                    </a>
+
+                    <a class="linkedIn" href="#">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                    </a>
+                </div>
+
+                <!-- mentions legales  -->
+                <div class="mentions flex--row">
+                    <p>ADW Tech 2023</p>
+                    <!-- <a href="">
+                        <p>terms conditions d'utilisations</p>
+                    </a> -->
+                    <a href="mentionsLegales.html" class="mentions-pages">
+                        <p>mentions légales</p>
+                    </a>
+                    <!-- <a href="">
+                        <p>all rights reserved</p>
+                    </a> -->
+                </div>
+            </section>
+
+            <section class="footer-nav">
+
+            </section>
+        </footer>
+        <!-- <footer>
+            <iframe src="fenetre01.html" frameborder="0"></iframe>
+        </footer> -->
+    </div>
+
+    <script type="text/javascript" src="js/javascript.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Fréquemment posées</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .faq--accordion--question {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            height: 100px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .faq--accordion--question::before,
+        .faq--accordion--question::after {
+            position: absolute;
+            content: " ";
+            width: 25px;
+            height: 25px;
+            border-top: 5px solid black;
+            border-right: 5px solid black;
+            align-self: center;
+        }
+
+        .faq--accordion--question::after {
+            right: 0;
+            transform: rotate(-135deg);
+        }
+
+        .faq--accordion--question::before {
+            left: 0;
+            transform: rotate(45deg);
+        }
+
+        .faq--accordion--question:after {
+            /* content: "click me";
+            onclick: "my_function()"; */
+            onclick: rotate(100deg);
+        }
+
+        .active,
+        .faq--accordion--question:hover {
+            background-color: #0ffff0;
+        }
+
+        .faq--panel__reponses {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 200px;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="global flex--column">
+        <!-- ---------- HEADER ---------- -->
+        <header>
+            <!-- <figure class="logo__container">
+                <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
+            </figure> -->
+            <figure class="banner__container">
+                <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+                    Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+                    Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+
+            </figure>
+            <figure class="avatar__container">
+                <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+            </figure>
+        </header>
+
+
+        <!-- --------- NAVIGATION ----- -->
+        <div class="navigation">
+            <div class="nav-deco"></div>
+            <div class="sub-nav">
+                <span></span>
+                <nav class="sub-nav__menu myTopnav flex--row" id="topnav">
+                    <a href="index.html" class="container active">
+                        <figure class="overlayImg">
+                            <!-- les icônes utilisées du sites flaticon (stickers) -->
+                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>home</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Notre page d'accueil
+                            </p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>ADW</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                L'histoire, les valeurs, les collaborateurs et notre travail
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="gallerie.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Gallerie</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="cv.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Mon CV</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="faq.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Q & R</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Questions fréquemment posées
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Contact</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Pour plus d'information,
+                                laissez nous un message.
+                                Nous vous répondrons dans un bref délais
+                            </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fil d'Ariane -->
+        <div class="display" style="background-color: cyan; width: 100%;">
+            <div class="portfolio">
+                <a href="#">ADW. Home / </a>
+            </div>
+        </div>
+
+        <main>
+            <div class="faq--titre01">
+                <h2>La plupart des questions sur le travail de webdesign.</h2>
+                <p>
+                    ADW a mis sur cette page des réponses à des questions que nos clients se posent le plus souvent.
+                    <br>
+                    Nous espéront qu'elles vous serons utiles.
+                </p>
+            </div>
+
+            <button class="faq--accordion--question">Section 1</button>
+            <div class="faq--panel__reponses ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq--accordion--question">Section 2</button>
+            <div class="faq--panel__reponses ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="faq--accordion--question">Section 3</button>
+            <div class="faq--panel__reponses ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </main>
+
+
+
+        <!-- ---------- FOOTER ---------- -->
+        <footer>
+            <section class="info-coord-legal">
+                <!-- info  -->
+                <div class="info">
+                    <div class="coord card-info">
+                        <h3>Coordonnées</h3>
+                        <div class="card-info__service flex--column">
+                            <p>Rue de Namur, 5</p>
+                            <p>1300 Wavre</p>
+                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                            <a href="https://www.adw.com">www.adw.com</a>
+                        </div>
+                    </div>
+                    <div class="about card-info">
+                        <h3>About us</h3>
+                        <div class="card-info__service flex--column">
+                            <p>
+                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
+                                visibilité sur les réseaux sociaux et sur internet.
+                                une équipe passionnée, jeune et polyvalente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service card-info">
+                        <h3>Services</h3>
+                        <div class="card-info__service flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Infographie</li>
+                                <li>Retouche photo</li>
+                                <li>Ergonomie UX UI</li>
+                                <li>Création de site internet</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact card-info">
+                        <h3>Contact et order</h3>
+                        <div class="card- flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Devis</li>
+                                <li>Charte Graphique</li>
+                                <li>Maquettage de site web</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reseaux  -->
+                <div class="reseaux-sociaux">
+                    <a class="youtube" href="#">
+                        <i class="fa-brands fa-youtube"></i>Youtube
+                    </a>
+                    <a class="instagram" href="#">
+                        <i class="fa-brands fa-square-instagram"></i>Instagram
+                    </a>
+
+                    <a class="facebook" href="#">
+                        <i class="fa-brands fa-square-facebook"></i>facebook
+                    </a>
+
+                    <a class="linkedIn" href="#">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                    </a>
+                </div>
+
+                <!-- mentions legales  -->
+                <div class="mentions flex--row">
+                    <p>ADW Tech 2023</p>
+                    <!-- <a href="">
+                        <p>terms conditions d'utilisations</p>
+                    </a> -->
+                    <a href="mentionsLegales.html" class="mentions-pages">
+                        <p>mentions légales</p>
+                    </a>
+                    <!-- <a href="">
+                        <p>all rights reserved</p>
+                    </a> -->
+                </div>
+            </section>
+
+            <section class="footer-nav">
+
+            </section>
+        </footer>
+
+    </div>
+
+
+    <script type="text/javascript" src="js/javascript.js">
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("faq--accordion--question");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

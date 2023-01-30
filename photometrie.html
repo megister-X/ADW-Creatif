@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photométrie</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+
+		.global {
+			min-height: 1000px;
+			gap: 2vw;
+			/* background-color: darkgoldenrod */
+		}
+
+		
+
+		main{
+			align-items: center;
+		}
+
+		.appareil__photo {
+			display: flex;
+			width: 40%;
+			height: 400px;
+			background-color: #43696a;
+			margin: 48px;
+			border: 4px groove #43696a;
+		}
+
+		.appareil--section{
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+
+			background-color: bisque;
+             background: linear-gradient(120deg, #e5e5e5 30%, #f2f2f2 38%, #f2f2f2 40%, #e5e5e5 48%);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            animation: load 2s infinite;
+
+
+			margin-left: 50%;
+			transform: translateX(-50%);
+			align-self: center;
+			/* glyph-orientation-vertical: 90deg; */
+
+			border: 5px double rgb(154, 218, 230);
+		}
+
+        
+        @keyframes load{
+    100%{
+      background-position: -100% 0;
+    }
+  }
+
+
+		aside {
+			width: 60px;
+			height: 50px;
+
+			background-color: cyan;
+
+			float: right;
+
+			margin-top: -25px;
+			margin-left: -30px;
+			padding-right: 12px;
+
+			align-self: flex-start;
+
+			border: 4px dashed rgb(154, 218, 230);
+		}
+		
+		.photo__retouche{
+			display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 1000px;
+            gap: 2vw;
+			margin-top: 12px;
+		}
+		
+		section.sect-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            width: 80%;
+            height: 500px;
+
+            background-color: aquamarine;
+            gap: 2vw;
+        }
+        section.sect-2{
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end; */
+
+            width: 80%;
+            min-height: 500px;
+
+            background-color: aquamarine;
+            gap: 2vw;
+        }
+        
+        .sect-1__art-2{
+
+        }
+
+        article{
+            width: 45%;
+            min-height: 250px;
+            background-color: chartreuse;
+
+            margin-bottom: 6px;
+        }
+
+        .sect-2__ecran{
+            width: 90%;
+            height: 500px;
+
+            background-color: rgb(255, 0, 111);
+            margin-top: 6px;
+        }
+
+        .sect-2__articles{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            width: 90%;
+            height: 250px;
+        }
+
+
+        /* images gif */
+        .img--gif{
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .art-kleuren{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 350px;
+        }
+
+        .art-kleuren .gris{
+            width: 500px;
+            height: 240px;
+
+            background-color: rgba(82, 78, 78, 0.76);
+        }
+        .art-kleuren .noir{
+            width: 500px;
+            height: 90px;
+
+            background-color: rgba(17, 15, 15, 0.733);
+        }
+        
+	</style>
+</head>
+
+<body>
+	<div class="global">
+		<!-- ---------- HEADER ---------- -->
+        <header>
+            <!-- <figure class="logo__container">
+                <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
+            </figure> -->
+            <figure class="banner__container">
+                <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+                    Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+                    Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+
+            </figure>
+            <figure class="avatar__container">
+                <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+            </figure>
+        </header>
+
+
+        <!-- --------- NAVIGATION ----- -->
+        <div class="navigation">
+            <div class="nav-deco"></div>
+            <div class="sub-nav">
+                <span></span>
+                <nav class="sub-nav__menu myTopnav flex--row" id="topnav">
+                    <a href="index.html" class="container active">
+                        <figure class="overlayImg">
+                            <img src="images/social-media-2786261_1920.jpg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>home</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Notre page d'accueil
+                            </p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/winter-1044922_1920.jpg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>ADW</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                L'histoire, les valeurs, les collaborateurs et notre travail
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="gallerie.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/cow-1570656_1920.jpg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Gallerie</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="cv.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/cow-1570656_1920.jpg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Mon CV</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="faq.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/meet-1019875_1920.jpg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Q & R</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Questions fréquemment posées
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/meet-1019875_1920.jpg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Contact</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fil d'Ariane -->
+        <div class="display" style="background-color: cyan; width: 100%;">
+            <div class="portfolio">
+                <a href="#">ADW. Home / </a>
+            </div>
+        </div>
+
+		<main>
+			<div class="appareil__photo">
+				<section class="appareil--section"></section>
+				<aside></aside>
+			</div>
+
+			<div class="photo__retouche flex--row">
+				<!-- Fênetres -->
+				<section class="sect-1">
+					<article class="sect-1__art-1">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/tatouage.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+					<article class="sect-1__art-2">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/tatouageOutilCorrectionLocalise.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+				</section>
+
+				<section class="sect-2 flex--column">
+					<div class="sect-2__ecran">
+                        <figure class="carte1">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/langueDeVipere.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+					</div>
+
+					<div class="sect-2__articles">
+						<article class="sect-2__art-1">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/retouchtips_preview.jpg" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+						<article class="sect-2__art-2">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/snake-4180800_1280.jpg" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+					</div>
+				</section>
+			</div>
+			<div class="photo__retouche">
+				<!-- Fênetres -->
+				<section class="sect-2 flex--column">
+					<div class="sect-2__ecran">
+                        <figure class="carte1">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/OutilSelection.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+					</div>
+
+					<div class="sect-2__articles">
+						<article class="sect-2__art-1">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/ImagePourDetourage.jpg" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+						<article class="sect-2__art-2">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/pexels-magda-ehlers-1771748.jpg" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+					</div>
+				</section>
+
+				<section class="sect-1">
+					<article class="sect-1__art-1">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/cicatrice-jambe.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+					<article class="sect-1__art-2">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/cicatrice-jambeCorrecteursEtLocalise01.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+				</section>
+			</div>
+
+            <div class="photo__retouche flex--row">
+				<!-- Fênetres -->
+				<section class="sect-1">
+					<article class="sect-1__art-1">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/fille-plage.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+					<article class="sect-1__art-2">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/fille-plageTampon.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+				</section>
+
+				<section class="sect-2 flex--column">
+					<div class="sect-2__ecran">
+                        <figure class="carte1">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/AlienFille.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+					</div>
+
+					<div class="sect-2__articles">
+						<article class="sect-2__art-1">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/609f4f629998bd5a1a9680257973c096.jpg" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+						<article class="sect-2__art-2">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/alien-560710_1280.webp" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+					</div>
+				</section>
+			</div>
+			<div class="photo__retouche">
+				<!-- Fênetres -->
+				<section class="sect-2 flex--column">
+					<div class="sect-2__ecran">
+                        <figure class="carte1">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/a" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+					</div>
+
+					<div class="sect-2__articles">
+						<article class="sect-2__art-1">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+						<article class="sect-2__art-2">
+                            <figure class="carte">
+                                <img src="realisation/imgPhotoshopADW/retouchePhoto/" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </article>
+					</div>
+				</section>
+
+				<section class="sect-1">
+					<article class="sect-1__art-1">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/boutons.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+					<article class="sect-1__art-2">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/retouchePhoto/boutonsOutilCorrecteur01X.jpg" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </article>
+				</section>
+			</div>
+             <!-- Gif -->
+            <div class="img--gif flex--row">
+   
+                <article class="art-kleuren">
+                    <section class="gris">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/gif/intro01.gif" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </section>
+                    <section class="noir">
+                    </section>
+                </article>
+
+                
+                <article class="art-kleuren">
+                    <section class="gris">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/gif/petitpoisson.gif" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </section>
+                    <section class="noir">
+                    </section>
+                </article>
+                <article class="art-kleuren">
+                    <section class="gris">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/gif/photo-restauration02.gif" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </section>
+                    <section class="noir">
+                    </section>
+                </article>
+                <article class="art-kleuren">
+                    <section class="gris">
+                        <figure class="carte">
+                            <img src="realisation/imgPhotoshopADW/gif/rueOmdre01.gif" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </section>
+
+                    <section class="noir">
+                    </section>
+                </article>
+            </div>
+
+		</main>
+
+		<!-- ---------- FOOTER ---------- -->
+        <footer>
+            <section class="info-coord-legal">
+                <!-- info  -->
+                <div class="info">
+                    <div class="coord card-info">
+                        <h3>Coordonnées</h3>
+                        <div class="card-info__service flex--column">
+                            <p>Rue de Namur, 5</p>
+                            <p>1300 Wavre</p>
+                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                            <a href="https://www.adw.com">www.adw.com</a>
+                        </div>
+                    </div>
+                    <div class="about card-info">
+                        <h3>About us</h3>
+                        <div class="card-info__service flex--column">
+                            <p>
+                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
+                                visibilité sur les réseaux sociaux et sur internet.
+                                une équipe passionnée, jeune et polyvalente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service card-info">
+                        <h3>Services</h3>
+                        <div class="card-info__service flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Infographie</li>
+                                <li>Retouche photo</li>
+                                <li>Ergonomie UX UI</li>
+                                <li>Création de site internet</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact card-info">
+                        <h3>Contact et order</h3>
+                        <div class="card- flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Devis</li>
+                                <li>Charte Graphique</li>
+                                <li>Maquettage de site web</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reseaux  -->
+                <div class="reseaux-sociaux">
+                    <a class="youtube" href="#">
+                        <i class="fa-brands fa-youtube"></i>Youtube
+                    </a>
+                    <a class="instagram" href="#">
+                        <i class="fa-brands fa-square-instagram"></i>Instagram
+                    </a>
+
+                    <a class="facebook" href="#">
+                        <i class="fa-brands fa-square-facebook"></i>facebook
+                    </a>
+
+                    <a class="linkedIn" href="#">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                    </a>
+                </div>
+
+                <!-- mentions legales  -->
+                <div class="mentions flex--row">
+                    <p>ADW Tech 2023</p>
+                    <!-- <a href="">
+                        <p>terms conditions d'utilisations</p>
+                    </a> -->
+                    <a href="mentionsLegales.html" class="mentions-pages">
+                        <p>mentions légales</p>
+                    </a>
+                    <!-- <a href="">
+                        <p>all rights reserved</p>
+                    </a> -->
+                </div>
+            </section>
+
+            <section class="footer-nav">
+
+            </section>
+        </footer>
+        <script type="text/javascript" src="js/javascript.js">
+        </script>
+	</div>
+</body></html>

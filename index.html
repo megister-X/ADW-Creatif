@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="global flex--column">
+        <!-- ---------- HEADER ---------- -->
+        <header>
+            <!-- <figure class="logo__container">
+                <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
+            </figure> -->
+            <figure class="banner__container">
+                <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+                    Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+                    Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+
+            </figure>
+            
+            <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+           
+        </header>
+
+
+        <!-- --------- NAVIGATION ----- -->
+        <div class="navigation">
+            <div class="nav-deco"></div>
+            <div class="sub-nav">
+                <span></span>
+                <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
+                    <a href="index.html" class="container active">
+                        <figure class="overlayImg">
+                            <!-- les icônes utilisées du sites flaticon (stickers) -->
+                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>home</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Notre page d'accueil
+                            </p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>ADW</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Objectifs, Valeurs, Collaborateurs
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="gallerie.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Gallerie</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Découvrez nos réalisations
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="cv.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Mon CV</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Découvrez mes formations et mes expériences
+                            </p>
+                        </div>
+                    </a>
+                    <a href="faq.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Q & R</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Questions fréquemment posées
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Contact</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Pour plus d'information,
+                                Laissez nous un message.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Fil d'Ariane -->
+        
+        <!-- <div class="display" style="background-color: cyan; width: 100%;">
+            <div class="portfolio">
+                <a href="#">ADW. Home / </a>
+            </div>
+        </div> -->
+
+
+        <!-- ------ SERVICES NAVIGATION ------ -->
+        <div class="container__services flex--column parallax">
+            <h2>Réalisations</h2>
+            <menu class="nav-central flex--column">
+                <a href="#gestionProjet.html">
+                    <img src="images/checklist.png" alt="">
+                    <span>Gestion Web </span>
+                </a>
+                
+
+                <a href="photometrie.html">
+                    <span>Retouche Image</span>
+                    <img src="images/checklist.png" alt="">
+                </a>
+                <a href="#graphisme.html" >
+                    <img src="images/checklist.png" alt="">
+                    <span>Infographiste </span>
+                </a>
+
+                <a href="#uiux.html">
+                    <span>UI UX Ergonomie web</span>
+                    <img src="images/checklist.png" alt="">
+                </a>
+
+                <a href="#developpementWeb.html">
+                    <img src="images/checklist.png" alt="">
+                    <span>Developpement web</span>
+                </a>
+
+                <a href="#webCms.html">
+                    <span>Création CMS </span>
+                    <img src="images/checklist.png" alt="">
+                </a>
+            </menu>
+
+        </div>
+
+
+        <!-- ---------- BANNER ---------- -->
+        <div class=" presentation carte banniere parallax flex--space__around">
+            
+            <div class="presentation--services">
+                <!-- <h2>Réaliser votre site internet avec un professionnel</h2> -->
+                <h2>Infographisme</h2>
+                
+                <h3>Photoshop</h3>
+                <p>
+                    *  Format: jpg, png, gif<br>
+                    *  Retouche photo<br>
+                    *  Moodboard<br>
+                    *  Carte de visite<br>
+                </p>
+                <h3>Illustrator</h3>
+                <p>
+                    *  logo<br>
+                    *  Affiche<br>
+                    *  Flyers<br>
+                    *  Banner<br>
+                </p>
+                <h3>Un site prêt pour votre visibilité</h3>
+            </div>
+            <div class="presentation--services">
+                <h2>Création de site internet</h2>
+                
+                <h3>Projet web</h3>
+                <p>
+                    *  logo<br>
+                </p>
+                <h3>Charte Graphique</h3>
+                <p>
+                    *  logo<br>
+                </p>
+                <h3>CMS : WordPress</h3>
+                <p>
+                    *  logo<br>
+                </p>
+                <h3>Developpement web</h3>
+                <p>
+                    *  logo<br>
+                </p>
+                <h3>Un site prêt pour votre visibilité</h3>
+            </div>
+        </div>
+
+
+        <!--	Main -->
+        <main>
+            <div class="haut">
+
+                <div class="section__haut">
+                    <!-- Illustration Construction de l'identité graphique -->
+                    <section id="section-1__haut">
+                        <article class="carte art--haut">
+                            <h3>Logo</h3>
+                            <figure>
+                                <img src="realisation/imgIllustratorADW/logos/Logo_Original.png" alt="">
+                            </figure>
+                            <p>
+                                Nous créons votre logo
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+
+                        <article class="carte art--haut">
+                            <h3>Affiche</h3>
+                            <figure>
+                                <img src="realisation/imgPhotoshopADW/Afficche.png" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Eius eveniet dolore omnis? Aut exercitationem asperiores voluptatem numquam doloribus consectetur hic.
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+
+                        <article class="carte art--haut">
+                            <h3>Carte de visite</h3>
+                            <figure>
+                                <img src="realisation/imgPhotoshopADW/businessCardRecto.jpg" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Eius eveniet dolore omnis? Aut exercitationem asperiores voluptatem numquam doloribus consectetur hic.
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+
+                        <article class="carte art--haut">
+                            <h3>Montage image</h3>
+                            <figure>
+                                <img src="realisation/imgPhotoshopADW/ciel-etoilesMultipleSrc.jpg" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Eius eveniet dolore omnis? Aut exercitationem asperiores voluptatem numquam doloribus consectetur hic.
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+                    </section>
+                    <!-- Le travail de DESIGN WEB -->
+                    <section id="section-2__haut">
+                        <article class="carte art--haut">
+                            <h3>UI - UI</h3>
+                            <figure>
+                                <img src="images/uiux.jpg" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laudantium ea, dolores error sapiente nam reprehenderit?
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+                        <article class="carte art--haut">
+                            <h3>Prototypage</h3>
+                            <figure>
+                                <img src="images/prototypage.png" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laudantium ea, dolores error sapiente nam reprehenderit?
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+                        <article class="carte art--haut">
+                            <h3>Création du site CMS</h3>
+                            <figure>
+                                <img src="images/cmsWordPress.jpg" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laudantium ea, dolores error sapiente nam reprehenderit?
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+                        <article class="carte art--haut">
+                            <h3>Devellopement web code</h3>
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laudantium ea, dolores error sapiente nam reprehenderit?
+                            </p>
+                            <a href="realisation/uiux.html">Plus de détails...</a>
+                        </article>
+                    </section>
+                </div>
+            </div>
+
+            <div class="centre">
+                <section class="centre__section">
+                    <figure>
+                        <img src="images/constructionWeb.jpg" alt="">
+                    </figure>
+                </section>
+                <section class="centre__section">
+                    <figure>
+                        <img src="images/digitalisation.jpg" alt="">
+                    </figure>
+                </section>
+            </div>
+            <div class="conclusion">
+                
+                <div class="conclusion__texte">
+                    <h2>Bâtir votre site web</h2>
+                    <div class="conclusion__texte--grid">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis assumenda culpa ex voluptate.
+                            Maxime quasi ullam accusamus inventore obcaecati delectus.
+                        </p>
+                        <p>
+                            1 Pierre 5: 8<br>
+                            Soyez sobres, veillez. Votre adversaire, le diable, rôde comme un lion rugissant, cherchant qui
+                            il dévorera.
+                        </p>
+                        <p>
+                            1 Pierre 5: 8<br>
+                            Soyez sobres, veillez. Votre adversaire, le diable, rôde comme un lion rugissant, cherchant qui
+                            il dévorera.
+                        </p>
+                    </div>
+                </div>
+                <div class="conclusion__texte">
+                    <h2>Une vitrine sur le monde</h2>
+                    <div class="conclusion__texte--grid">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis assumenda culpa ex voluptate.
+                            Maxime quasi ullam accusamus inventore obcaecati delectus.
+                        </p>
+                        <p>
+                            1 Pierre 5: 8<br>
+                            Soyez sobres, veillez. Votre adversaire, le diable, rôde comme un lion rugissant, cherchant qui
+                            il dévorera.
+                        </p>
+                        <p>
+                            1 Pierre 5: 8<br>
+                            Soyez sobres, veillez. Votre adversaire, le diable, rôde comme un lion rugissant, cherchant qui
+                            il dévorera.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <!--   Diaporama     -->
+        <div class="diaporama flex--column">
+            <div class="diaporama__container flex--row">
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/christmas-1960883_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/girl-2270557_1920(1).jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/girl-2284344_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/girl-2447824_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/winter-1472915_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-1539416_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-2094572_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-2109746_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-2109747_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-2227741_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-2305214_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+                <figure class="diaporama__figures">
+                    <img src="diaporama_img/woman-3219507_1920.jpg" alt="" class="diaporama__fig--images">
+                </figure>
+            </div>
+        </div>
+
+        <!-- ---------- FOOTER ---------- -->
+        <footer>
+            <section class="info-coord-legal">
+                <!-- info  -->
+                <div class="info">
+                    <div class="coord card-info">
+                        <h3>Coordonnées</h3>
+                        <div class="card-info__service flex--column">
+                            <p>Rue de Namur, 5</p>
+                            <p>1300 Wavre</p>
+                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                            <a href="https://www.adw.com">www.adw.com</a>
+                        </div>
+                    </div>
+                    <div class="about card-info">
+                        <h3>About us</h3>
+                        <div class="card-info__service flex--column">
+                            <p>
+                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
+                                visibilité sur les réseaux sociaux et sur internet.
+                                une équipe passionnée, jeune et polyvalente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service card-info">
+                        <h3>Services</h3>
+                        <div class="card-info__service flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Infographie</li>
+                                <li>Retouche photo</li>
+                                <li>Ergonomie UX UI</li>
+                                <li>Création de site internet</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact card-info">
+                        <h3>Contact et order</h3>
+                        <div class="card- flex--column">
+                            <ul class="card-infol__i-services">
+                                <li>Devis</li>
+                                <li>Charte Graphique</li>
+                                <li>Maquettage de site web</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reseaux  -->
+                <div class="reseaux-sociaux">
+                    <a class="youtube" href="#">
+                        <i class="fa-brands fa-youtube"></i>Youtube
+                    </a>
+                    <a class="instagram" href="#">
+                        <i class="fa-brands fa-square-instagram"></i>Instagram
+                    </a>
+
+                    <a class="facebook" href="#">
+                        <i class="fa-brands fa-square-facebook"></i>facebook
+                    </a>
+
+                    <a class="linkedIn" href="#">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                    </a>
+                </div>
+
+                <!-- mentions legales  -->
+                <div class="mentions flex--row">
+                    <p>ADW Tech 2023</p>
+                    <!-- <a href="">
+                        <p>terms conditions d'utilisations</p>
+                    </a> -->
+                    <a href="mentionsLegales.html" class="mentions-pages">
+                        <p>mentions légales</p>
+                    </a>
+                    <!-- <a href="">
+                        <p>all rights reserved</p>
+                    </a> -->
+                </div>
+            </section>
+
+            <section class="footer-nav">
+
+            </section>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/javascript.js">
+    </script>
+
+</body>
+
+</html>

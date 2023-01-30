@@ -1,0 +1,67 @@
+
+
+section{
+    height: 390px;
+    background-color: bisque;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.images{
+    width: 550px;
+    height: 350px;
+    background-color: orange;
+    margin: 5px;
+}
+
+/*----------   Gallerie   ---------*/
+	
+.gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gallery a{
+	display: flex;
+}
+
+.gallery figure{
+	border: #000000 solid 2px;
+	margin: 5px;
+}
+
+.gallery > figure, figure a > img{
+	flex: 1 1 auto;
+	width: auto;
+	height: auto;
+	max-width: 600px;
+	max-height: 260px;
+	object-fit: cover;
+}
+
+/* *** Efft sur photo *** */
+.gallery a img{
+	height: 252px;
+	object-fit: cover;
+	transition: transform .2s;
+}
+
+
+#gallery:hover a img{
+	filter:blur(1px) brightness(.8) grayscale(.7);
+	transform: scale(.8);
+	
+}
+
+#gallery a img:hover{
+	filter:blur(0);
+	transform: scale(1);
+	
+}
+
+
+

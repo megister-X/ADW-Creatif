@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+p{
+    font-family: 'Roboto';
+    color: darkgreen;
+    text-shadow: 0 0 7px rgba(255,255,255,0.3),
+    0 0 3px rgba(255,255,255,0.3);
+    margin-top: 20px;
+}
+
+.moi--meme{
+    text-transform: uppercase;
+    font-size: 1.26rem;
+    height: 450px;
+    color:var(--bleu_foncer);
+}
+
+.animation--metiers{
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.animation--metiers > div{
+}
+.animation--metiers > div > div{
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    height: 2.81rem;
+    width: 400px;
+    text-align: center;
+    
+}
+
+.animation--metiers div:first-child{
+    animation: text-animation 8s infinite;
+}
+
+.job-01 div{
+    background-color: #08d67d;
+}
+.job-02 div{
+    background-color: #111fff;
+}
+.job-03 div{
+    background-color: #f69337;
+}
+
+
+@keyframes text-animation{
+    0%{
+        margin-top: 0;
+    }
+    10%{
+        margin-top: 0;
+    }
+    20%{
+        margin-top: -5.62rem;
+    }
+    30%{
+        margin-top: -5.62rem;
+    }
+    40%{
+        margin-top: -11.24rem;
+    }
+    
+    60%{
+        margin-top: -11.24rem;
+    }
+    70%{
+        margin-top: -5.62rem;
+    }
+    80%{
+        margin-top: -5.62rem;
+    }
+    90%{
+        margin-top: 0rem;
+    }
+    100%{
+        margin-top: 0rem;
+    }
+}
+
+
+/*-------------------------- MAIN --------------------- */
+
+.conteneur{
+    display: flex;
+    flex-direction: row;
+	background-color: #f7931e;
+	box-shadow: 2px 1px 1px 15px black;
+}
+
+
+.conteneur section{
+	display: flex;
+    flex-direction: column;
+	margin: 5px;
+	padding: 5px;
+}
+.col-gauche{
+    
+	width: 30%;
+}
+.avatar{
+    width: 100%;
+    align-self: center;
+}
+.info-contact{
+    border-bottom: #A48888 solid thin;
+}
+.espace-icone{
+    margin: 15px;
+    height: 20px;
+    width: 20px;
+}
+.fa-solid{
+    color: aqua; 
+}
+
+/*-----     SKILLLS    -----*/
+.skills, .language{
+    
+}
+.contpress, .contlang{
+    border: thin solid aqua;
+    border-radius: 12px;
+    background-color: #F2F8F8;
+}
+.progress, .lang{
+    background-color: aqua;
+    border-radius: 12px 0 0 12px;
+    /* border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px; */
+    text-align: center;
+}
+
+.col-droite{
+    display: flex;
+    flex-direction: column;
+	width: 70%;
+}
+.work-exp, .educ{
+	height: 50%;
+	background-color: #A2B5AE;
+	border: thin double black;
+}
+.work-exp div, .educ div{
+	width: 100%;
+	box-shadow: 0.25px 0.25px 1px black;
+	margin: 6px;
+}
+
+
+.wrapper{
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 6px 3px 25% #ff22cc;
+    background: #fff;
+    
+}
+
