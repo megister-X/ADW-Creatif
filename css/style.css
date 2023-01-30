@@ -47,7 +47,7 @@
 	--pFont: normal 20px 'Source Sans Pro', 'Pragmatica Extra', Helvetica, sans-serif;
 	/* --figcaptionFont:bold  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 	--pFontCard: normal 18px Geneva, 'Source Sans Pro', Verdana, sans-serif;
-	--citationFont: italic 18px "Brush Script MT", 'Source Sans Pro', 'Helvetica Neue', cursive;
+	--citationFont: italic 26px "Brush Script MT", 'Source Sans Pro', 'Helvetica Neue', cursive;
 
 	/* Les marges */
 	--textPadding: 6px;
