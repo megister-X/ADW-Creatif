@@ -132,7 +132,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-bottom: .5em;
     }
 
     label {
@@ -191,12 +190,12 @@
       width: 100%;
       height: 500px;
     }
+
     .map--addresse iframe {
       width: 100%;
       height: auto;
       object-fit: cover;
     }
-
   </style>
 
 </head>
@@ -204,112 +203,109 @@
 <body>
   <a href="#topnav" class="retourmenu flex--column">
     <div class="remontemenu--icone"></div>
-</a>
+  </a>
   <div class="global flex--column">
-     <!-- ---------- HEADER ---------- -->
-     <header>
+    <!-- ---------- HEADER ---------- -->
+    <header>
       <!-- <figure class="logo__container">
           <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
       </figure> -->
       <figure class="banner__container">
-          <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
-              Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
-              Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+        <img
+          Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+          Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px " Src="images/ADW-banner100vw-03.png"
+          alt="ADW Developpeur Designer Web banniere" class="banner">
 
       </figure>
-      
+
       <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
-     
-  </header>
+
+    </header>
 
 
-  <!-- --------- NAVIGATION ----- -->
-  <div class="navigation">
+    <!-- --------- NAVIGATION ----- -->
+    <div class="navigation">
       <div class="nav-deco"></div>
       <div class="sub-nav">
-          <span></span>
-          <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
-              <a href="index.html" class="container active">
-                  <figure class="overlayImg">
-                      <!-- les icônes utilisées du sites flaticon (stickers) -->
-                      <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%"
-                          height="auto">
-                  </figure>
-                  <h3>home</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Notre page d'accueil
-                      </p>
-                  </div>
-              </a>
-              <a href="about.html" class="container">
-                  <figure class="overlayImg">
-                      <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
-                          height="auto">
-                  </figure>
-                  <h3>ADW</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Objectifs, Valeurs, Collaborateurs
-                      </p>
-                  </div>
-              </a>
+        <span></span>
+        <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
+          <a href="index.html" class="container active">
+            <figure class="overlayImg">
+              <!-- les icônes utilisées du sites flaticon (stickers) -->
+              <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>home</h3>
+            <div class="overlayText">
+              <p class="text">
+                Notre page d'accueil
+              </p>
+            </div>
+          </a>
+          <a href="about.html" class="container">
+            <figure class="overlayImg">
+              <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>ADW</h3>
+            <div class="overlayText">
+              <p class="text">
+                Objectifs, Valeurs, Collaborateurs
+              </p>
+            </div>
+          </a>
 
-              <a href="gallerie.html" class="container">
-                  <figure class="overlayImg">
-                      <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                  </figure>
-                  <h3>Gallerie</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Découvrez nos réalisations
-                      </p>
-                  </div>
-              </a>
+          <a href="gallerie.html" class="container">
+            <figure class="overlayImg">
+              <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>Gallerie</h3>
+            <div class="overlayText">
+              <p class="text">
+                Découvrez nos réalisations
+              </p>
+            </div>
+          </a>
 
-              <a href="cv.html" class="container">
-                  <figure class="overlayImg">
-                      <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                  </figure>
-                  <h3>Mon CV</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Découvrez mes formations et mes expériences
-                      </p>
-                  </div>
-              </a>
-              <a href="faq.html" class="container">
-                  <figure class="overlayImg">
-                      <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%"
-                          height="auto">
-                  </figure>
-                  <h3>Q & R</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Questions fréquemment posées
-                      </p>
-                  </div>
-              </a>
-              <a href="contact.html" class="container">
-                  <figure class="overlayImg">
-                      <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
-                          height="auto">
-                  </figure>
-                  <h3>Contact</h3>
-                  <div class="overlayText">
-                      <p class="text">
-                          Pour plus d'information,
-                          Laissez nous un message.
-                      </p>
-                  </div>
-              </a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-              </a>
-          </nav>
+          <a href="cv.html" class="container">
+            <figure class="overlayImg">
+              <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>Mon CV</h3>
+            <div class="overlayText">
+              <p class="text">
+                Découvrez mes formations et mes expériences
+              </p>
+            </div>
+          </a>
+          <a href="faq.html" class="container">
+            <figure class="overlayImg">
+              <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>Q & R</h3>
+            <div class="overlayText">
+              <p class="text">
+                Questions fréquemment posées
+              </p>
+            </div>
+          </a>
+          <a href="contact.html" class="container">
+            <figure class="overlayImg">
+              <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+            </figure>
+            <h3>Contact</h3>
+            <div class="overlayText">
+              <p class="text">
+                Pour plus d'information,
+                Laissez nous un message.
+              </p>
+            </div>
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
       </div>
-  </div>
-  
+    </div>
+
     <main class="main--contact flex--row">
       <article class="main--contact__cont flex--column">
         <span></span>
@@ -477,35 +473,35 @@
                 <legend>Données de contact</legend>
                 <div class="contchamp">
                   <div class="champ">
-                    <label>Nom :</label><input name="name" type="text" placeholder="votre nom" pattern="[a-zA-Z]{1,}"
+                    <label>Nom </label><input name="name" type="text" placeholder="votre nom" pattern="[a-zA-Z]{1,}"
                       maxlength="50" required>
                   </div>
                   <div class="champ">
-                    <label>Prénom :</label><input name="prenom" type="text" placeholder="votre prénom"
+                    <label>Prénom </label><input name="prenom" type="text" placeholder="votre prénom"
                       pattern="[a-zA-Z]{1,}" maxlength="50" required>
                   </div>
                   <div class="champ">
-                    <label>Entreprise :</label><input type="text" name="entreprise" style="box-shadow:none">
+                    <label>Entreprise </label><input type="text" name="entreprise" style="box-shadow:none">
                   </div>
                   <div class="champ">
-                    <label>Tel. :</label><input type="tel" name="tel" placeholder="888-88-888"
+                    <label>Tel. </label><input type="tel" name="tel" placeholder="888-88-888"
                       pattern="[0-9]{2,3}-[0-9]{2}-[0-9]{3}" required>
                   </div>
-                  <div class="champ"><label>E-mail :</label><input type="email" name="email"
+                  <div class="champ"><label>E-mail </label><input type="email" name="email"
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
                   </div>
                 </div>
               </fieldset><br />
 
-              <label>Votre demande :</label><br />
+              <label>Votre demande </label><br />
 
               <textarea cols="35" rows="6" maxlength="100" style="box-shadow:none"></textarea>
               <br /><br />
-
+              <div class="flex--space__around">
               <input class="input--valid" type="submit" value="Envoyer"
                 style="box-shadow:none; background-color:#ffffff; border: #F90409 2px solid; color: #0502F9; border-radius:20px 5px; padding:3px ">
               <input class="input--valid" name="effacer" type="reset" class="effacer" value="Effacer">
-            
+            </div>
             </form>
           </div>
 
