@@ -18,6 +18,7 @@
       height: 100%;
       background: #1b1464;
       flex: 1;
+      border: 1px solid black
     }
 
     .main--contact__cont {
@@ -119,7 +120,6 @@
     fieldset {
       width: 100%;
       height: auto;
-      padding: 10px;
     }
 
     .contchamp {
@@ -309,15 +309,7 @@
           </nav>
       </div>
   </div>
-
-    <!-- Fil d'Ariane -->
-    <div class="display" style="background-color: cyan; width: 100%;">
-      <div class="portfolio">
-        <a href="#">ADW. Home / </a>
-      </div>
-    </div>
-
-
+  
     <main class="main--contact flex--row">
       <article class="main--contact__cont flex--column">
         <span></span>
@@ -479,6 +471,7 @@
         <section class="contact flex--space__around">
           <div class="formbox">
             <h2>Formulaire de contact</h2>
+
             <form action="formmail2.php" accept-charset="utf-8" method="post">
               <fieldset>
                 <legend>Données de contact</legend>
@@ -503,12 +496,16 @@
                   </div>
                 </div>
               </fieldset><br />
+
               <label>Votre demande :</label><br />
+
               <textarea cols="35" rows="6" maxlength="100" style="box-shadow:none"></textarea>
               <br /><br />
+
               <input class="input--valid" type="submit" value="Envoyer"
                 style="box-shadow:none; background-color:#ffffff; border: #F90409 2px solid; color: #0502F9; border-radius:20px 5px; padding:3px ">
               <input class="input--valid" name="effacer" type="reset" class="effacer" value="Effacer">
+            
             </form>
           </div>
 
