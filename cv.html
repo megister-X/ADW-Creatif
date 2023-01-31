@@ -20,116 +20,108 @@
 
 <body>
     <div class="global flex--column">
- <!-- ---------- HEADER ---------- -->
- <header>
-    <!-- <figure class="logo__container">
+        <!-- ---------- HEADER ---------- -->
+        <header>
+            <!-- <figure class="logo__container">
         <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
     </figure> -->
-    <figure class="banner__container">
-        <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
-            Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
-            Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
+            <figure class="banner__container">
+                <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+                    Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+                    Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere" class="banner">
 
-    </figure>
-    
-    <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
-   
-</header>
+            </figure>
+
+            <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+
+        </header>
 
 
-<!-- --------- NAVIGATION ----- -->
-<div class="navigation">
-    <div class="nav-deco"></div>
-    <div class="sub-nav">
-        <span></span>
-        <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
-            <a href="index.html" class="container active">
-                <figure class="overlayImg">
-                    <!-- les icônes utilisées du sites flaticon (stickers) -->
-                    <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%"
-                        height="auto">
-                </figure>
-                <h3>home</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Notre page d'accueil
-                    </p>
-                </div>
-            </a>
-            <a href="about.html" class="container">
-                <figure class="overlayImg">
-                    <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
-                        height="auto">
-                </figure>
-                <h3>ADW</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Objectifs, Valeurs, Collaborateurs
-                    </p>
-                </div>
-            </a>
+        <!-- --------- NAVIGATION ----- -->
+        <div class="navigation">
+            <div class="nav-deco"></div>
+            <div class="sub-nav">
+                <span></span>
+                <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
+                    <a href="index.html" class="container active">
+                        <figure class="overlayImg">
+                            <!-- les icônes utilisées du sites flaticon (stickers) -->
+                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>home</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Notre page d'accueil
+                            </p>
+                        </div>
+                    </a>
+                    <a href="about.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>ADW</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Objectifs, Valeurs, Collaborateurs
+                            </p>
+                        </div>
+                    </a>
 
-            <a href="gallerie.html" class="container">
-                <figure class="overlayImg">
-                    <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                </figure>
-                <h3>Gallerie</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Découvrez nos réalisations
-                    </p>
-                </div>
-            </a>
+                    <a href="gallerie.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Gallerie</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Découvrez nos réalisations
+                            </p>
+                        </div>
+                    </a>
 
-            <a href="cv.html" class="container">
-                <figure class="overlayImg">
-                    <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                </figure>
-                <h3>Mon CV</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Découvrez mes formations et mes expériences
-                    </p>
-                </div>
-            </a>
-            <a href="faq.html" class="container">
-                <figure class="overlayImg">
-                    <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%"
-                        height="auto">
-                </figure>
-                <h3>Q & R</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Questions fréquemment posées
-                    </p>
-                </div>
-            </a>
-            <a href="contact.html" class="container">
-                <figure class="overlayImg">
-                    <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
-                        height="auto">
-                </figure>
-                <h3>Contact</h3>
-                <div class="overlayText">
-                    <p class="text">
-                        Pour plus d'information,
-                        Laissez nous un message.
-                    </p>
-                </div>
-            </a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-    </div>
-</div>
-
-<!-- Fil d'Ariane -->
-<div class="display" style="background-color: cyan; width: 100%;">
-    <div class="portfolio">
-        <a href="#">ADW. Home / </a>
-    </div>
-</div>
+                    <a href="cv.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Mon CV</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Découvrez mes formations et mes expériences
+                            </p>
+                        </div>
+                    </a>
+                    <a href="faq.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
+                        </figure>
+                        <h3>Q & R</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Questions fréquemment posées
+                            </p>
+                        </div>
+                    </a>
+                    <a href="contact.html" class="container">
+                        <figure class="overlayImg">
+                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
+                                height="auto">
+                        </figure>
+                        <h3>Contact</h3>
+                        <div class="overlayText">
+                            <p class="text">
+                                Pour plus d'information,
+                                Laissez nous un message.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
 
         <!--	Presentation -->
         <div class="moi--meme__conteneur">
@@ -157,16 +149,16 @@
         <!-- La partie principale du site -->
 
         <!--- MAIN --->
-        <main>
+        <main class="flex--column">
             <h2 class="center"> Page </h2>
             <!---- conteneur principal ---->
-            <div class="conteneur">
+            <div class="conteneur--cv">
                 <section class="col-gauche">
                     <!-----     Avatar     ----->
                     <figure class="avatar"
                         style="text-align: center; font-weight: bolder; color: #1A00FF; font-size: 40px">
                         <img src="images/avatar.jpg" alt="" style="width: 100%; height: auto;">
-                        <figcaption><b>Alain Moi MEME </b></figcaption>
+                        <figcaption><b>Alain L Mbasi </b></figcaption>
                     </figure>
                     <!-----   Info Contact  ---->
                     <div class="info-contact">
@@ -235,48 +227,148 @@
                     </div>
                 </section>
                 <section class="col-droite">
-                    <!--     Expérience   -->
-                    <section class="work-exp">
-                        <h2><i class="fa-solid fa-briefcase espace-icone"></i>Web Expérience</h2>
-                        <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
-                        </div>
-                        <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
-                        </div>
-                        <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
-                        </div>
-                    </section>
                     <!--   Education    -->
                     <section class="educ">
-                        <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+                        <h2><i class="fa-solid fa-graduation-cap"> </i> Education</h2>
                         <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
+                            <h4 class="annees"> <i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>Front End Developpeur</h3>
+                                <h4>Conception d'interface de site internet</h4>
+                                <ul>
+                                    <li>css</li>
+                                    <li>html</li>
+                                    <li>media</li>
+                                    <li>Intégration Javascript</li>
+                                    <li>SCSS</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
                         </div>
                         <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
+                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>InfoGraphiste</h3>
+                                <h4>Support de communication visuelle</h4>
+                                <p>Typographie, Usage des images, mise en page
+                                    diverses missions graphiques :
+
+                                    design d’un site web
+                                    création d’un logo
+                                    réalisation de flyers
+                                    mise en forme d’une newsletter
+                                    confection des emballages d’un produit
+                                    ébauche d’une carte de visite
+                                    élaboration de visuels pour les réseaux sociaux
+
+                                </p>
+                                <ul>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>InDesign</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
                         </div>
                         <div>
-                            <h3>Front End Developpeur</h3>
-                            <h4><i class="fa-solid fa-calendar-days"></i>1222-12222</h4>
-                            <span>fff</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perspiciatis!</p>
+                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>Bureautique</h3>
+                                <h4>Rédation web, copywriting, Newsletters, mail</h4>
+                                <ul>
+                                    <li>Word</li>
+                                    <li>Excel</li>
+                                    <li>Google doc</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!--     Expérience   -->
+                    <section class="work-exp">
+                        <h2><i class="fa-solid fa-briefcase espace-icone"> </i> Web Expérience</h2>
+                        <div>
+
+                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>Front End Developpeur</h3>
+                                <h4>fff</h4>
+                                <ul>
+                                    <li>css</li>
+                                    <li>html</li>
+                                    <li>media</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+
+                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>Front End Developpeur</h3>
+                                <h4>fff</h4>
+                                <ul>
+                                    <li>css</li>
+                                    <li>html</li>
+                                    <li>media</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+
+                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                            <div>
+                                <h3>Front End Developpeur</h3>
+                                <h4>fff</h4>
+                                <ul>
+                                    <li>css</li>
+                                    <li>html</li>
+                                    <li>media</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- hobbies -->
+                    <section class="centres-interets">
+                        <div class="">
+                            <h3>Informatique</h3>
+                            <span>
+                                <ul>
+                                    <li>Codage</li>
+                                    <li>Graphisme</li>
+                                    <li>Developpement web</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="">
+                            <h3>Sport</h3>
+                            <span>
+                                <ul>
+                                    <li>Muay thai</li>
+                                    <li>Boxe Anglaise</li>
+                                    <li>Natation</li>
+                                    <li>Musculation</li>
+                                    <li>Jogging</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="">
+                            <h3>Culture général</h3>
+                            <span>
+                                <ul>
+                                    <li>Philosophie</li>
+                                    <li>Poésie</li>
+                                    <li>Mathématique</li>
+                                    <li>Les Sciences</li>
+                                    <li>L'Histoire</li>
+                                </ul>
+                            </span>
                         </div>
                     </section>
                 </section>

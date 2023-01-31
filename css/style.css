@@ -74,9 +74,11 @@ h2 {
 }
 
 h3 {
-	color: var(--jaune);
+	color: #534741;
 	text-align: center;
 	font: var(--h3Font);
+	width: 100%;
+	background-color: beige;
 }
 
 h4 {
@@ -107,8 +109,9 @@ a {
 a img {
 	width: 50px;
 }
+
 ul{
-	align-self: center;
+	
 }
 li {
 	list-style: none;
@@ -137,7 +140,39 @@ li {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-clip: border-box;
+	
+/*
+	transform-style: preserve-3d;
+	animation: virtus 2s linear infinite;
+	
+	width: 100%;
+	height: 650px;
+*/
+	
 }
+
+/*
+@keyframes virtus{
+	from{
+		transform: translateZ(-1px) scale(1);
+		overflow: hidden;
+	}
+	to{
+		transform: translateZ(-1px) scale(1.5);
+		overflow: hidden;
+	}
+}
+*/
+/*
+@keyframes virtus{
+	from{
+		perspective: 0;
+	}
+	to{
+		perspective: 1000px;
+	}
+}
+*/
 
 img {
 	width: 100%;
@@ -493,12 +528,19 @@ p.text {
 .banniere {
 	width: 100%;
 	height: 650px;
+	
 	background-image: url(../images/graphic-parallax-services.png);
+	
+/*	overflow: hidden;*/
 }
 
 .presentation--services {
 	background-color: beige;
 	width: 450px;
+	
+}
+.presentation--services:hover{
+	transform: perspective(1,5px);
 }
 
 .presentation--services h2 {
@@ -1148,22 +1190,22 @@ src: url("Devator.ttf");/*	format('woff2');*/
 	width: 100%;
 	min-height: 900px;
 
-	 background-color: blueviolet; 
+	 background-color: azure; 
 	border: 2px solid black;
+}
+.associers div{
+	padding: 12px;
+	box-shadow: 0 0 2px 1px gray;
+	margin: 6px;
 }
 
 .photo__associers {
 	width: 100%;
-	margin-bottom: 6px;
-
-	border: 2px solid black;
 }
 
-.photo__associer--01 {
+.photo__adw-team {
 	border-radius: 50%;
-	width: 25%;
-	margin-top: 36px;
-	/* background-color: #fff; */
+	width: 50%;
 }
 
 .associer--1 {
@@ -1173,16 +1215,16 @@ src: url("Devator.ttf");/*	format('woff2');*/
 
 /* cv associé */
 .presentation__associer {
-	border: 2px solid black;
+	
 }
 
-/* travail associé */
+/* travail associé */	
+}
 .travail__associer {
 	flex-direction: row;
 	justify-content: space-around;
 	width: 100%;
-
-	border: 2px solid black;
+	box-shadow: 0 0 2px 1px gray;
 }
 
 .associer__activiter {
@@ -1190,3 +1232,136 @@ src: url("Devator.ttf");/*	format('woff2');*/
 }
 
 /*------------------   Fin about   ---------------------*/
+
+
+
+
+/* photomontage */
+
+.photo div{
+	margin-bottom: 12px
+}
+		.appareil__photo {
+			display: flex;
+			width: 40%;
+			height: 400px;
+			background-color: #43696a;
+			margin-top: 36px;
+			border: 4px groove #43696a;
+		}
+
+		.appareil--section{
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+
+			background-color: bisque;
+             background: linear-gradient(120deg, #e5e5e5 30%, #f2f2f2 38%, #f2f2f2 40%, #e5e5e5 48%);
+            background-size: 200% 100%;
+            background-position: 100% 0;
+            animation: load 2s infinite;
+
+
+			margin-left: 50%;
+			transform: translateX(-50%);
+			align-self: center;
+			/* glyph-orientation-vertical: 90deg; */
+
+			border: 5px double rgb(154, 218, 230);
+		}
+
+        
+        @keyframes load{
+    100%{
+      background-position: -100% 0;
+    }
+  }
+
+
+		.flash--appareil{
+			width: 60px;
+			height: 50px;
+
+			background-color: cyan;
+
+			float: right;
+
+			margin-top: -25px;
+			margin-left: -30px;
+			padding-right: 12px;
+
+			align-self: flex-start;
+
+			border: 4px dashed rgb(154, 218, 230);
+		}
+		
+
+
+		.photo__retouche{
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 1000px;
+		}
+		
+		section.sect-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 80%;
+            min-height: 250px;
+        }
+.sect-1__art{
+		background-color: inherit;
+	width: 45%;
+            min-height: 250px;
+        }
+
+        section.sect-2{
+            width: 80%;
+            min-height: 500px;
+        }
+.sect-2 div{
+	margin-bottom: 6px;
+}
+        
+
+        .sect-2__ecran{
+            width: 90%;
+            height: 500px;
+			flex: 1;
+        }
+
+        .sect-2__articles{
+			margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 250px;
+        }
+
+
+        /* images gif */
+        .img--gif{
+            flex-wrap: wrap;
+			margin-bottom: 12px;
+        }
+        .img--gif .art-kleuren{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 350px;
+			margin-bottom: 12px;
+        }
+
+        .art-kleuren .gris{
+            width: 500px;
+            height: 240px;
+        }
+        .art-kleuren .noir{
+            width: 500px;
+            height: 90px;
+        }
+/* Fin photomontage */

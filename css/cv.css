@@ -18,9 +18,10 @@ p{
 .animation--metiers{
     height: 50px;
     overflow: hidden;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
 }
-.animation--metiers > div{
+.animation--metiers > div:first-child{
+	margin-top:  2.81rem;
 }
 .animation--metiers > div > div{
     display: inline-block;
@@ -32,6 +33,7 @@ p{
 }
 
 .animation--metiers div:first-child{
+	top: o;
     animation: text-animation 8s infinite;
 }
 
@@ -83,23 +85,23 @@ p{
 
 /*-------------------------- MAIN --------------------- */
 
-.conteneur{
+.conteneur--cv{
     display: flex;
     flex-direction: row;
-	background-color: #f7931e;
-	box-shadow: 2px 1px 1px 15px black;
+	box-shadow: 2px 1px 1px 1px black;
+	width: 100%;
 }
 
-
-.conteneur section{
+.conteneur--cv section{
 	display: flex;
     flex-direction: column;
 	margin: 5px;
 	padding: 5px;
 }
+/*  gauche  */
 .col-gauche{
-    
 	width: 30%;
+	background-color: #b3b3b3;
 }
 .avatar{
     width: 100%;
@@ -134,21 +136,37 @@ p{
     text-align: center;
 }
 
+/*  droite */
 .col-droite{
     display: flex;
     flex-direction: column;
 	width: 70%;
 }
-.work-exp, .educ{
+.work-exp, .educ, .centres-interets{
+	
 	height: 50%;
-	background-color: #A2B5AE;
+	width: 100%;
+/*	background-color: #93f2cf;*/
 	border: thin double black;
+	margin: 12px auto;
+}
+.work-exp h4{
+	
 }
 .work-exp div, .educ div{
+	display: grid;
+	grid-template-columns: 20% 1fr;
 	width: 100%;
 	box-shadow: 0.25px 0.25px 1px black;
 	margin: 6px;
 }
+
+.work-exp div div, .educ div div{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
 
 
 .wrapper{
