@@ -633,7 +633,7 @@ footer {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	height: 365px;
+	min§height: 365px;
 	width: 100%;
 	background-color: #1a1a1a;
 }
@@ -642,13 +642,13 @@ footer {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: #ddf298;
+/*	background-color: #5c6654;*/
 	background-image: url("../realisation/imgIllustratorADW/PaonPlume-02.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: right;
 	width: 100%;
-	min-height: 730px;
+	min-height: 830px;
 	overflow: hidden;
 }
 .info {
@@ -656,21 +656,21 @@ footer {
 	flex-direction: column;
 	margin: 0 10px;
 	width: 300px;
-	min-height: 160px;
+	min-height: 700px;
 }
 .card-info {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 100%;
 	min-height: 160px;
 	margin: 3px;
 }
 .card-info>h3 {
-	width: 300px;
-	height: 20px;
 	background-color: #ab8355;
-	color: red;
-	margin-top: 1px;
+	color: #f5d9c7;
+	width: 100%;
+    height: 50px;
+    padding: auto auto;
 }
 .card-info div {
 	width: 300px;
