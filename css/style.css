@@ -194,10 +194,9 @@ body {
 	position: fixed;
 	right: 0;
 	top: 50%;
-	width: 30px;
-	height: 30px;
-	border-radius: 10px 0 0 10px;
-	background-color: blue;
+	width: 40px;
+	height: 40px;
+	background-color: #1b1bc9;
 	box-shadow: 1px 1px 4px 1px #0fff0;
 }
 .remontemenu--icone {
@@ -210,7 +209,6 @@ body {
 }
 
 /*   Réseaux sociaux latéraux    */
-/*   Réseaux sociaux latéraux    */
 .reseaux-sociaux-lateral{
 	position: fixed;
 	left: 0;
@@ -219,7 +217,6 @@ body {
 .reseaux-sociaux-lateral a{
 	width: 40px;
 	height: 40px;
-	margin-bottom: 2px;
 }
 .reseaux-sociaux-lateral a img{
 	align-self: center;
