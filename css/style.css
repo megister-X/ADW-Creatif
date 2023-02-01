@@ -558,6 +558,7 @@ main {
 	width: 45%;
 	height: min-content;
 	margin: 30px;
+	box-shadow: 2px 2px 6px 2px #1b1464;
 }
 .centre__section figure {
 	width: 80%;
