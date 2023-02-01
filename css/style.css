@@ -468,7 +468,7 @@ p.text {
 .presentation--services {
 	background-color: beige;
 	width: 450px;
-	padding: 6px;
+	padding: 12px;
 	box-shadow: 2px 2px 6px 2px #1b1464;
 }
 .presentation--services:hover {
@@ -530,6 +530,7 @@ main {
 	/*	background-color: cadetblue;*/
 	background-color: navajowhite;
 	box-shadow: 2px 2px 6px 1px white;
+	padding: 12px;
 }
 .art--haut h3 {
 	width: 100%;
@@ -576,9 +577,9 @@ main {
 	margin-bottom: 6px;
 }
 .conclusion__texte {
-	width: 45%;
+	width: 48%;
 	min-height: 250px;
-	padding: 6px;
+	padding:12px;
 	background-color: #c69c6d;
 }
 .conclusion__texte--grid {
