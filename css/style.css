@@ -194,20 +194,44 @@ body {
 	position: fixed;
 	right: 0;
 	top: 50%;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	border-radius: 10px 0 0 10px;
 	background-color: blue;
 	box-shadow: 1px 1px 4px 1px #0fff0;
 }
 .remontemenu--icone {
-	width: 25px;
-	height: 25px;
+	width: 10px;
+	height: 10px;
 	border-bottom: 2px double #fff;
 	border-right: 2px double #fff;
 	border-width: 5px;
 	transform: rotate(-135deg)
 }
+
+/*   Réseaux sociaux latéraux    */
+/*   Réseaux sociaux latéraux    */
+.reseaux-sociaux-lateral{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	z-index: 1;
+	
+}
+.reseaux-sociaux-lateral a{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 2px;
+}
+.reseaux-sociaux-lateral a img{
+	align-self: center;
+	background-color: chartreuse;
+	width: 40px;
+	height: 40px;
+}
+
+
+
 /*-------------------------*\
 		GLOBAL
 \*-------------------------*/
