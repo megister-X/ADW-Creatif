@@ -468,6 +468,8 @@ p.text {
 .presentation--services {
 	background-color: beige;
 	width: 450px;
+	padding: 6px;
+	box-shadow: 2px 2px 6px 2px #1b1464;
 }
 .presentation--services:hover {
 	transform: perspective(1, 5px);
