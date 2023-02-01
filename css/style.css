@@ -215,8 +215,6 @@ body {
 	position: fixed;
 	left: 0;
 	top: 50%;
-	z-index: 1;
-	
 }
 .reseaux-sociaux-lateral a{
 	width: 40px;
