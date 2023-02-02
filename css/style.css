@@ -210,12 +210,12 @@ body {
 /*---     Ancre    ---*/
 .retourmenu {
 	position: fixed;
-	right: 0;
+	right: 6px;
 	top: 50%;
 	width: 40px;
 	height: 40px;
-	background-color: black;
-	border-radius: 12px 0 0 12px;
+	background-color: #0ffff0;
+	border-radius: 12px;
 	box-shadow: 1px 1px 4px 1px #0fff0;
 }
 .remontemenu--icone {
@@ -223,7 +223,7 @@ body {
 	height: 10px;
 	border-bottom: 2px double #fff;
 	border-right: 2px double #fff;
-	border-width: 5px;
+	border-width: 10px;
 	transform: rotate(-135deg)
 }
 
