@@ -164,7 +164,7 @@ figcaption {
 	width: 300px;
 	min-height: 486px;
 	font: var(--h2Font);
-	box-shadow: 1px 1px 4px 1px #1b1464;
+	box-shadow: 1px 2px 14px 1px #1b1464;
 }
 button,
 input[submit] {
@@ -555,6 +555,9 @@ main {
 	background-color: navajowhite;
 	box-shadow: 2px 2px 6px 1px white;
 	padding: 12px;
+}
+.art--haut figure{
+	flex: 1;
 }
 .art--haut h3 {
 	width: 100%;
