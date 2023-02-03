@@ -291,7 +291,7 @@ header {
 	width: 100%;
 	height: 300px;
 	background-color: blue;
-	z-index: 0;
+	z-index: 9999;
 }
 .nav-deco {
 	position: absolute;
@@ -552,11 +552,14 @@ main {
 #section-1__haut,
 #section-2__haut {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	column-gap: 50px;
 	width: 100%;
 	min-height: 350px;
 	background-color: azure;
+}
+.cont--art__haut{
+	
 }
 .art--haut {
 	width: 100%;
