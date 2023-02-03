@@ -6,6 +6,9 @@
 }
 /*  Dossier web  */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+html{
+	font-size: 62,5%;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -162,8 +165,11 @@ figcaption {
 	color: beige;
 }
 .carte {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 300px;
-	min-height: 486px;
+	min-height: 350px;
 	font: var(--h2Font);
 	box-shadow: 1px 2px 14px 1px #1b1464;
 }
@@ -218,14 +224,15 @@ body {
 	background-color: #0ffff0;
 	border-radius: 12px;
 	box-shadow: 1px 1px 4px 1px #0fff0;
+	z-index: 9999;
 }
 .remontemenu--icone {
-	width: 10px;
+	width: 25%;
 	height: 10px;
 	border-bottom: 2px double #fff;
 	border-right: 2px double #fff;
 	border-width: 10px;
-	transform: rotate(-135deg)
+	transform: rotate(-135deg);
 }
 
 /*   Réseaux sociaux latéraux    */
@@ -233,6 +240,7 @@ body {
 	position: fixed;
 	left: 0;
 	top: 50%;
+	z-index: 9999;
 }
 .reseaux-sociaux-lateral a{
 	width: 40px;
@@ -242,8 +250,8 @@ body {
 }
 .reseaux-sociaux-lateral a img{
 	align-self: center;
-	width: 40px;
-	height: 40px;
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -493,11 +501,14 @@ p.text {
 .presentation--services {
 	background-color: beige;
 	width: 450px;
+	min-height: 250px;
 	padding: 12px;
 	box-shadow: 2px 2px 6px 2px #1b1464;
+	transition: transform 0.5s ease;
 }
 .presentation--services:hover {
-	transform: perspective(1, 5px);
+	transform: scale(1.1);
+	background-color: aqua;
 }
 .presentation--services h2 {
 	color: var(--orange);
@@ -536,8 +547,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	background-color: azure;
-	gap: 2vw;
 	min-height: 450px
 }
 #section-1__haut,
@@ -551,11 +560,12 @@ main {
 }
 .art--haut {
 	width: 100%;
-	min-height: 450px;
+	
 	/*	background-color: cadetblue;*/
 	background-color: navajowhite;
-	box-shadow: 2px 2px 6px 1px white;
+	box-shadow: 1px 1px 2px 1px #646464;
 	padding: 12px;
+	margin-bottom: 6px;
 }
 .art--haut figure{
 	flex: 1;
@@ -565,12 +575,12 @@ main {
 	height: 50px;
 	background-color: aqua;
 	color: blueviolet;
+	font-size: 2rem;
 }
 .art--haut figure {
 	width: 100%;
 	min-height: 150px;
 	background-color: blue;
-	flex: 1;
 }
 .art--haut a {
 	width: 100%;
@@ -791,6 +801,12 @@ foot--timer__adw,
 		width: 100%;
 		margin: 0 12px;
 	}
+	.reseaux-sociaux-lateral a,
+	.retourmenu {
+		width: 20px;
+		height: 20px;
+		margin-bottom: 12px;
+	}
 
 	.avatar__nom {
 		font-size: 18px;
@@ -842,6 +858,25 @@ foot--timer__adw,
 	.mentions a {
 		margin-left: auto 6px;
 	}
+	
+/* ---	Banner avec présentation des activités  --- */
+	.presentation--services {
+	width: 40%;
+	padding: 0px;
+}
+	
+/*  ----	Main      ---   */
+	#section-1__haut,
+#section-2__haut {
+	column-gap: 0px;
+	min-height: 350px;
+	background-color: azure;
+}
+.art--haut {
+	/*	background-color: cadetblue;*/
+	padding: 6px;
+	margin:0 6px;
+}
 
 }
 
@@ -864,6 +899,13 @@ foot--timer__adw,
 	.reseaux-sociaux {
 		right: -465px;
 	}
+	
+	
+	/* ---	Banner avec présentation des activités  --- */
+	.presentation--services {
+	width: 40%;
+	padding: 0px;
+}
 
 }
 
