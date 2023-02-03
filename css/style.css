@@ -4,6 +4,15 @@
 	font-family: "Aharoni";
 	src: url("/static/styles/libs/font-awesome/fonts/fontawesome-webfont.fdf491ce5ff5.woff");
 }
+
+@font-face {
+	font-family: "SelfDeception";
+	src: url("/fonts/SelfDeceptionRegular-ALLWA.ttf");
+}
+@font-face {
+	font-family: "Tangerine";
+	src: url("/fonts/Tangerine-Regular.ttf");
+}
 /*  Dossier web  */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 html{
@@ -39,7 +48,7 @@ html{
 	--pFont: normal 20px 'Source Sans Pro', 'Pragmatica Extra', Helvetica, sans-serif;
 	/* --figcaptionFont:bold  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 	--pFontCard: normal 18px Geneva, 'Source Sans Pro', Verdana, sans-serif;
-	--citationFont: italic 26px "Brush Script MT", 'Source Sans Pro', 'Helvetica Neue', cursive;
+	--citationFont: italic 26px "Tangerine", "SelfDeception", cursive;
 	/* Les marges */
 	--textPadding: 6px;
 	--boxMargin: 12px;
@@ -65,7 +74,6 @@ h3 {
 	text-align: center;
 	font: var(--h3Font);
 	width: 100%;
-	background-color: beige;
 }
 h4 {
 	color: black;
@@ -100,6 +108,7 @@ li {
 }
 .citation {
 	font: var(--citationFont);
+	font-size: 2.5rem;
 }
 .citation::after,
 .citation::before {
@@ -549,7 +558,14 @@ main {
 	width: 100%;
 	min-height: 450px
 }
-#section-1__haut,
+#section-1__haut{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 50px;
+	width: 100%;
+	min-height: 350px;
+	background-color: azure;
+}
 #section-2__haut {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -559,7 +575,7 @@ main {
 	background-color: azure;
 }
 .cont--art__haut{
-	
+	width: 100%;
 }
 .art--haut {
 	width: 100%;
@@ -623,10 +639,16 @@ main {
 	padding:12px;
 	background-color: #c69c6d;
 }
-.conclusion__texte--grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 15px;
+.conclusion__textes{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+ .cont--citation{
+	 display: flex;
+	 flex-direction: column;
+	 background-color: aqua;
 }
 /*   ----------     */
 /*-------------------------*\
@@ -750,26 +772,26 @@ footer {
 	flex-wrap: nowrap;
 }
 .reseaux-sociaux a i {
-	margin-right: 200px;
+	margin-right: 20px;
 	margin-left: 10px;
 }
 .youtube {
 	background-color: red;
-	width: 650px;
+	width: 450px;
 }
 .instagram {
 	background-color: rgb(245, 9, 166);
-	width: 600px;
+	width: 400px;
 	margin-left: 50px;
 }
 .facebook {
 	background-color: blue;
-	width: 550px;
+	width: 350px;
 	margin-left: 100px;
 }
 .linkedIn {
 	background-color: rgb(2, 2, 70);
-	width: 500px;
+	width: 300px;
 	margin-left: 150px;
 }
 /* Mentions Legales */
