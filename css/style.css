@@ -276,16 +276,15 @@ body {
 		HEADER
 \*-------------------------*/
 header {
-	position:absolute;
+	position: absolute;
 	display: flex;
 	justify-content: space-evenly;
 	width: 80%;
 	top: -50px;
-	z-index: 999;
+	z-index: 9999;
 }
 
 .banner__container {
-	position: absolute;
 	width: 100%;
 	top: 0;
 }
@@ -500,23 +499,27 @@ p.text {
 /*-------------------------*\
 		BANNIERE
 \*-------------------------*/
-.banniere {
+.presentation{
 	width: 100%;
-	height: 650px;
+	min-height: 900px;
 	margin-bottom: 12px;
-	background-image: url(../images/graphic-parallax-services.png);
+	background-color: #0c0ca7;
 	/*	overflow: hidden;*/
+}
+.presentation-conteneur{
+	width: 100%;
+	min-height: 450px;
 }
 .presentation--services {
 	background-color: beige;
-	width: 450px;
-	min-height: 250px;
+	width: 48%;
+	min-height: 450px;
 	padding: 12px;
 	box-shadow: 2px 2px 6px 2px #1b1464;
 	transition: transform 0.5s ease;
 }
 .presentation--services:hover {
-	transform: scale(1.1);
+	transform: scale(1.01);
 	background-color: aqua;
 }
 .presentation--services h2 {
@@ -531,6 +534,19 @@ p.text {
 	background-color: rgba(240, 255, 255, 0.6);
 	color: #662d91;
 }
+
+/*  ---   texte   ---  */
+.presentation-texte{
+	width: 100%;
+	min-height: 250px;
+}
+.presentation-texte01{
+	width: 98%;
+	height: 200px;
+	margin: 12px;
+	background-color: aliceblue;
+}
+
 /*-------------------------*\
 		MAIN DE LA PAGE
 \*-------------------------*/
@@ -551,28 +567,24 @@ main {
 	justify-content: space-between;
 	width: 100%;
 	min-height: 900px;
+	
 }
 .section__haut {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	min-height: 450px
+	min-height: 450px;
+	
 }
-#section-1__haut{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 50px;
-	width: 100%;
-	min-height: 350px;
-	background-color: azure;
-}
+#section-1__haut,
 #section-2__haut {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 50px;
 	width: 100%;
 	min-height: 350px;
-	background-color: azure;
+/*	background-color: azure;*/
+	background-color: darkblue;
 }
 .cont--art__haut{
 	width: 100%;
@@ -600,6 +612,10 @@ main {
 	width: 100%;
 	min-height: 150px;
 	background-color: blue;
+}
+
+.art--haut p{
+	height: 100px;
 }
 .art--haut a {
 	width: 100%;
