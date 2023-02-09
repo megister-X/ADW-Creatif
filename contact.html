@@ -77,7 +77,7 @@
       z-index: 1000;
     }
 
-  
+
 
     @media (max-width: 900px) {
       .main--contact span {
@@ -136,7 +136,7 @@
     }
 
     input:valid {
-      box-shadow: 0 0 2px 1px green;
+      box-shadow: 0 5px 5px 1px green;
       /*Permet de choisir la couleur des champ bien rempli*/
     }
 
@@ -199,38 +199,38 @@
   <!-- reseaux  -->
   <div class="reseaux-sociaux-lateral flex--column">
     <a href="#" style="background-color: red;">
-        <img src="images/rs-youtube.png" alt="youtube">
+      <img src="images/rs-youtube.png" alt="youtube">
     </a>
     <a href="#" style="background-image: linear-gradient(-135deg, violet,violet, red,orange, yellow ) ;">
-        <img src="images/rs-instagram.png" alt="instagram">
+      <img src="images/rs-instagram.png" alt="instagram">
     </a>
 
     <a href="#" style="background-color: blue ;">
-        <img src="images/rs-facebook.png" alt="facebook">
+      <img src="images/rs-facebook.png" alt="facebook">
     </a>
 
     <a href="#" style="background-color: #0808a8;">
-        <img src="images/rs-linkendin.png" alt="linkedin">
+      <img src="images/rs-linkendin.png" alt="linkedin">
     </a>
-</div>
+  </div>
   <!-- Balise classe global -->
   <div class="global flex--column">
     <!-- ---------- HEADER ---------- -->
     <header>
-      <!-- <figure class="logo__container">
-          <img src="images/adw-logo.svg" alt="Developpeur Designer Web" class="logo" width="100%" height="auto">
+      <!-- <figure class="banner__container">
+          <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
+              Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
+              Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere">
       </figure> -->
-      <figure class="banner__container">
-        <img
-          Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
-          Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px " Src="images/ADW-banner100vw-03.png"
-          alt="ADW Developpeur Designer Web banniere" class="banner">
-
+      <figure class="logo">
+          <img src="images/adw-logoSite.svg" alt="">
       </figure>
 
-      <figcaption class="avatar__nom">ADW - ARCHITECTURE . DESIGNER . WEB</figcaption>
+      <figure class="header--deco">
+          <img src="images/ADW-deco-Header.png" alt="">
+      </figure>
 
-    </header>
+  </header>
 
 
     <!-- --------- NAVIGATION ----- -->
@@ -313,7 +313,7 @@
         </nav>
       </div>
     </div>
-<!-- Corps de la page -->
+    <!-- Corps de la page -->
     <main class="main--contact flex--row">
       <article class="main--contact__cont flex--column">
         <span></span>
@@ -506,10 +506,11 @@
               <textarea cols="35" rows="6" maxlength="100" style="box-shadow:none"></textarea>
               <br /><br />
               <div class="flex--space__around">
-              <input class="input--valid" type="submit" value="Envoyer"
-                style="box-shadow:none; background-color:#ffffff; border: #F90409 2px solid; color: #0502F9; border-radius:20px 5px; padding:3px ">
-              <input class="input--valid" name="effacer" type="reset" class="effacer" value="Effacer">
-            </div>
+                <input class="input--valid" type="submit" value="Envoyer"
+                  style="box-shadow:none; background-color:#0ffff0; border: #f7931e 2px solid; color: #f7931e; border-radius:12px; padding:3px ">
+                <input class="input--valid" name="effacer" type="reset" class="effacer" value="Effacer" 
+                style="box-shadow:none; background-color:#f7931e; border: #0ffff0 2px solid; color: #0ffff0; border-radius:12px; padding:3px ">
+              </div>
             </form>
           </div>
 
