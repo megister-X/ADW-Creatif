@@ -1001,9 +1001,7 @@ header .header--deco{
 	font-size: 1.5rem;
 }
 .citation--titre {
-	font-family: 'Luci', 'Source Sans Pro','da Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: #080808;
-	font-size: 14px;
+	font-size: 10px;
 }
 
 }
