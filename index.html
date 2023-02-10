@@ -62,7 +62,7 @@
         <!-- --------- NAVIGATION ----- -->
         <div class="navigation">
             <div class="nav-deco"></div>
-            <div class="sub-nav">
+            <div class="sub-nav" id="myNav">
                 <span></span>
                 <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
                     <a href="index.html" class="container active">
@@ -89,7 +89,6 @@
                             </p>
                         </div>
                     </a>
-
                     <a href="gallerie.html" class="container">
                         <figure class="overlayImg">
                             <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
@@ -102,7 +101,6 @@
                             </p>
                         </div>
                     </a>
-
                     <a href="cv.html" class="container">
                         <figure class="overlayImg">
                             <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
@@ -138,9 +136,12 @@
                             </p>
                         </div>
                     </a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()"">
                         <i class="fa fa-bars"></i>
                     </a>
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a> -->
                 </nav>
             </div>
         </div>
@@ -222,7 +223,7 @@
                     <h3>Un site prêt pour votre visibilité</h3>
                 </article>
             </div>
-            <div class="presentation-texte">
+            <div class="presentation-texte flex--column">
                 <article class="presentation-illustration">
                     <h2></h2>
                     <p></p>
@@ -546,6 +547,15 @@
     </div>
     <script type="text/javascript" src="js/javascript.js">
     </script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 </body>
 
 </html>

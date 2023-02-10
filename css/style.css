@@ -515,7 +515,9 @@ p.text {
 	/*	overflow: hidden;*/
 }
 .presentation-conteneur{
-	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
 	min-height: 450px;
 }
 .presentation--services {
@@ -550,7 +552,7 @@ p.text {
 	min-height: 250px;
 }
 .presentation-illustration{
-	width: 98%;
+	width: 100%;
 	height: 200px;
 	margin: 12px;
 	background-color: aliceblue;
@@ -633,7 +635,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	height: 460px;
+	min-height: 500px;
 	background-color: darkslateblue;
 	box-shadow: inset 1px 1px 6px 1px #fff;
 }
@@ -720,7 +722,7 @@ footer {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	min§height: 365px;
+	min-height: 365px;
 	width: 100%;
 	background-color: #1a1a1a;
 }
@@ -849,24 +851,47 @@ foot--timer__adw,
 		Media queries
 \*-------------------------*/
 @media screen and (max-width: 640px) {
-	.global {
-		width: 100%;
-		margin: 0 12px;
-	}
+	.banner__container {
+	width: 100%;
+	top: 0;
+}
+.banner__container img {
+	width: 100%;
+	vertical-align: middle;
+}
 	.reseaux-sociaux-lateral a,
 	.retourmenu {
 		width: 20px;
 		height: 20px;
 		margin-bottom: 12px;
 	}
-
-	.avatar__nom {
-		font-size: 18px;
-	}
-
-	.nav-deco {
+	.global {
 		width: 100%;
+		margin: 0 20px;
 	}
+/*	Header  */
+header .logo{
+	width: 100px;
+}
+header .header--deco{
+	display: none;
+}
+/* ----- ------ */
+	
+/*	navigation   */
+	.navigation {
+	height: 150px;
+}
+	.nav-deco {
+	min-height: 150px;
+}
+	.sub-nav__menu {
+	height: 200px;
+	margin-top: 0px;
+}
+	
+	
+/*	------   ------  */
 
 	/*	burger menu*/
 	.myTopnav a:not(:first-child) {
@@ -916,6 +941,43 @@ foot--timer__adw,
 	width: 40%;
 	padding: 0px;
 }
+	/*-------------------------*\
+		BANNIERE
+\*-------------------------*/
+.presentation-conteneur{
+	width: 100%;
+	min-height: 450px;
+}
+.presentation--services {
+	padding: 24px;
+	width: 50%;
+	
+}
+.presentation--services h2 {
+	font-size: 1.4rem;
+}
+.presentation--services p,
+	p,
+	a,
+	.presentation--services ul li{
+	font-size: 1.0rem;
+		padding: 6px;
+}
+.presentation--services h3, h3 {
+	font-size: 1.2rem;
+}
+
+.presentation-texte{
+	width: 90%;
+	min-height: 250px;
+	margin: 6px;
+}
+.presentation-illustration{
+	width: 100%;
+	height: 200px;
+	margin: 12px;
+}
+/*  ----   -----  */
 	
 /*  ----	Main      ---   */
 	#section-1__haut,
@@ -924,10 +986,13 @@ foot--timer__adw,
 	min-height: 350px;
 	background-color: azure;
 }
+	.cont--art__haut{
+		flex-direction: column;
+}
 .art--haut {
 	/*	background-color: cadetblue;*/
 	padding: 6px;
-	margin:0 6px;
+	margin:6px 0;
 }
 
 }

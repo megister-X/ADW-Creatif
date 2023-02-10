@@ -1,12 +1,13 @@
-// Menu Hamburger
+
+// Menu hamburger
 function myFunction() {
-    var x = document.getElementById("topnav");
-    if (x.className === "myTopnav") {
-        x.className += " responsive";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "sub-nav__menu") {
+      x.className += " responsive";
     } else {
-        x.className = "myTopnav";
+      x.className = "sub-nav__menu";
     }
-}
+  }
 
 //************************************************* */
 var acc = document.getElementsByClassName("accordion");
