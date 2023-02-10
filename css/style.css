@@ -108,7 +108,7 @@ li {
 }
 .citation {
 	font: var(--citationFont);
-	font-size: 2.5rem;
+	font-size: 1.5rem;
 }
 .citation::after,
 .citation::before {
@@ -993,6 +993,17 @@ header .header--deco{
 	/*	background-color: cadetblue;*/
 	padding: 6px;
 	margin:6px 0;
+}
+	
+/*	 ----    Citation    ----   */
+	.citation {
+	font: var(--citationFont);
+	font-size: 1.5rem;
+}
+.citation--titre {
+	font-family: 'Luci', 'Source Sans Pro','da Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #080808;
+	font-size: 14px;
 }
 
 }
