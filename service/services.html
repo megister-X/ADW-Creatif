@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<style>
+		a {
+			text-decoration: none;
+			font-size: 4.2rem;
+		}
+
+		nav {
+			position: fixed;
+			width: 0;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-color: rgba(0,0,0,0.5);
+			overflow: hidden;
+			transition: width 0.5s;
+		}
+
+		.close-menu{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+
+		menu {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			top: 25%;
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		menu a:hover{
+			color: yellow;
+		}
+	</style>
 </head>
+
 <body>
-	
+	<nav id="myNav">
+		<a href="javascript:void(0)" class="close-menu" onclick="closeNav()">&times;</a>
+		<menu>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact</a>
+		</menu>
+	</nav>
+	<a href="#" style="font-size:30px;cursor:pointer" onclick="openNav()">
+		&#9776;
+	</a>
+
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
 </body>
+
 </html>

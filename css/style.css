@@ -769,6 +769,10 @@ footer {
 	background-color: #8e8172;
 	padding-left: 6px;
 }
+.card-info div a{
+	color: black;
+	text-align: center;
+}
 .card-infol__i-services {
 	padding: 2px;
 }
@@ -941,9 +945,7 @@ header .header--deco{
 	width: 40%;
 	padding: 0px;
 }
-	/*-------------------------*\
-		BANNIERE
-\*-------------------------*/
+	/*---- BANNIERE    ------*/
 .presentation-conteneur{
 	width: 100%;
 	min-height: 450px;
@@ -1002,6 +1004,20 @@ header .header--deco{
 }
 .citation--titre {
 	font-size: 10px;
+}
+	
+/*	/footer   */
+	.info {
+	margin-bottom: 12px;
+	width: 300px;
+	min-height: 700px;
+}
+.card-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 160px;
+	margin: 6px;
 }
 
 }
