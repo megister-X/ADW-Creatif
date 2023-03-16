@@ -1,492 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/entete.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cv.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="css/entete.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cv.css" />
+  </head>
 
-<body>
+  <body>
     <a href="#topnav" class="retourmenu flex--column">
-        <div class="remontemenu--icone"></div>
+      <div class="remontemenu--icone"></div>
     </a>
     <!-- reseaux  -->
     <div class="reseaux-sociaux-lateral flex--column">
-        <a href="#" style="background-color: red;">
-            <img src="images/rs-youtube.png" alt="youtube">
-        </a>
-        <a href="#" style="background-image: linear-gradient(-135deg, violet,violet, red,orange, yellow ) ;">
-            <img src="images/rs-instagram.png" alt="instagram">
-        </a>
+      <a href="#" style="background-color: red">
+        <img src="images/rs-youtube.png" alt="youtube" />
+      </a>
+      <a
+        href="#"
+        style="
+          background-image: linear-gradient(
+            -135deg,
+            violet,
+            violet,
+            red,
+            orange,
+            yellow
+          );
+        "
+      >
+        <img src="images/rs-instagram.png" alt="instagram" />
+      </a>
 
-        <a href="#" style="background-color: blue ;">
-            <img src="images/rs-facebook.png" alt="facebook">
-        </a>
+      <a href="#" style="background-color: blue">
+        <img src="images/rs-facebook.png" alt="facebook" />
+      </a>
 
-        <a href="#" style="background-color: #0808a8;">
-            <img src="images/rs-linkendin.png" alt="linkedin">
-        </a>
+      <a href="#" style="background-color: #0808a8">
+        <img src="images/rs-linkendin.png" alt="linkedin" />
+      </a>
     </div>
     <div class="global flex--column">
-        <!-- ---------- HEADER ---------- -->
-        <header>
-            <!-- <figure class="banner__container">
+      <!-- ---------- HEADER ---------- -->
+      <header>
+        <!-- <figure class="banner__container">
                 <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
                     Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
                     Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere">
             </figure> -->
-            <figure class="logo">
-                <img src="images/adw-logoSite.svg" alt="">
-            </figure>
+        <figure class="logo">
+          <img src="images/adw-logoSite.svg" alt="" />
+        </figure>
 
-            <figure class="header--deco">
-                <img src="images/ADW-deco-Header.png" alt="">
-            </figure>
+        <figure class="header--deco">
+          <img src="images/ADW-deco-Header.png" alt="" />
+        </figure>
+      </header>
 
-        </header>
+      <!-- --------- NAVIGATION ----- -->
+      <div class="navigation">
+        <div class="nav-deco"></div>
+        <div class="sub-nav">
+          <span></span>
+          <nav
+            class="sub-nav__menu myTopnav breadcrumb flat flex--row"
+            id="topnav"
+          >
+            <a href="index.html" class="container active">
+              <figure class="overlayImg">
+                <!-- les icônes utilisées du sites flaticon (stickers) -->
+                <img
+                  src="images/ADW-home-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>home</h3>
+              <div class="overlayText">
+                <p class="text">Notre page d'accueil</p>
+              </div>
+            </a>
+            <a href="about.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-about01-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>ADW</h3>
+              <div class="overlayText">
+                <p class="text">Objectifs, Valeurs, Collaborateurs</p>
+              </div>
+            </a>
 
+            <a href="gallerie.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-gallerie-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Gallerie</h3>
+              <div class="overlayText">
+                <p class="text">Découvrez nos réalisations</p>
+              </div>
+            </a>
 
-        <!-- --------- NAVIGATION ----- -->
-        <div class="navigation">
-            <div class="nav-deco"></div>
-            <div class="sub-nav">
-                <span></span>
-                <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
-                    <a href="index.html" class="container active">
-                        <figure class="overlayImg">
-                            <!-- les icônes utilisées du sites flaticon (stickers) -->
-                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>home</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Notre page d'accueil
-                            </p>
-                        </div>
-                    </a>
-                    <a href="about.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>ADW</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Objectifs, Valeurs, Collaborateurs
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="gallerie.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>Gallerie</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Découvrez nos réalisations
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="cv.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>Mon CV</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Découvrez mes formations et mes expériences
-                            </p>
-                        </div>
-                    </a>
-                    <a href="faq.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>Q & R</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Questions fréquemment posées
-                            </p>
-                        </div>
-                    </a>
-                    <a href="contact.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>Contact</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Pour plus d'information,
-                                Laissez nous un message.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </nav>
-            </div>
+            <a href="cv.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-cv-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Mon CV</h3>
+              <div class="overlayText">
+                <p class="text">Découvrez mes formations et mes expériences</p>
+              </div>
+            </a>
+            <a href="faq.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-faq-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Q & R</h3>
+              <div class="overlayText">
+                <p class="text">Questions fréquemment posées</p>
+              </div>
+            </a>
+            <a href="contact.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-contact-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Contact</h3>
+              <div class="overlayText">
+                <p class="text">
+                  Pour plus d'information, Laissez nous un message.
+                </p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
         </div>
+      </div>
 
-        <!--	Presentation -->
-        <div class="moi--meme__conteneur">
-            <div class="moi--meme flex--column">
-                <h1>ADW</h1>
-                <p>Architecture . Designer . Web</p>
-                <p>Bienvenu à vous sur mon site internet</p>
-                <p>Je me nomme</p>
-                <h2>Alain L. Mbasi</h2>
-                <section class="animation--metiers flex--column">
-                    <div class="job-01">
-                        <div>UX UI Designer</div>
-                    </div>
-                    <div class="job-02">
-                        <div>Gestionnaire de projet</div>
-                    </div>
-                    <div class="job-03">
-                        <div>Designer Web et WordPress</div>
-                    </div>
-                </section>
-
+      <!--	Presentation -->
+      <div class="moi--meme__conteneur">
+        <div class="moi--meme flex--column">
+          <h1>ADW</h1>
+          <p>Architecture . Designer . Web</p>
+          <p>Bienvenu à vous sur mon site internet</p>
+          <p>Je me nomme</p>
+          <h2>Alain L. Mbasi</h2>
+          <section class="animation--metiers flex--column">
+            <div class="job-01">
+              <div>UX UI Designer</div>
             </div>
+            <div class="job-02">
+              <div>Gestionnaire de projet</div>
+            </div>
+            <div class="job-03">
+              <div>Designer Web et WordPress</div>
+            </div>
+          </section>
         </div>
+      </div>
 
-        <!-- La partie principale du site -->
+      <!-- La partie principale du site -->
 
-        <!--- MAIN --->
-        <main class="flex--column">
-            <h2 class="center"> Page </h2>
-            <!---- conteneur principal ---->
-            <div class="conteneur--cv">
-                <section class="col-gauche">
-                    <!-----     Avatar     ----->
-                    <figure class="avatar"
-                        style="text-align: center; font-weight: bolder; color: #1A00FF; font-size: 40px">
-                        <img src="images/avatar.jpg" alt="" style="width: 100%; height: auto;">
-                        <figcaption><b>Alain L Mbasi </b></figcaption>
-                    </figure>
-                    <!-----   Info Contact  ---->
-                    <div class="info-contact">
-                        <p><i class="fa-solid fa-briefcase espace-icone"></i>Front-end Développeur</p>
-                        <p><i class="fa-solid fa-location-dot espace-icone"></i>London UK</p>
-                        <p><i class="fa-solid fa-envelope espace-icone"></i>alain@hfkdjsd.com</p>
-                        <p><i class="fa-solid fa-phone espace-icone"></i>0032 478 56 23 23</p>
-                    </div>
-                    <!------ Skills -------->
-                    <div class="skills">
-                        <h3 class="espace-titre">
-                            <i class="fa-solid fa-asterisk"></i>
-                            Skills
-                        </h3>
-                        <p>HTML, HTML5</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 90%">90%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 90%">90%</div>
-                        </div>
-                        <p>Javascript</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 60%">60%</div>
-                        </div>
-                        <p>Adobe Photoshop</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 85%">85%</div>
-                        </div>
-                        <p>Adobe Illustrator</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 70%">70%</div>
-                        </div>
-                        <p>CMS Word Press</p>
-                        <div class="contpress">
-                            <div class="progress" style="width: 65%">65%</div>
-                        </div>
-                    </div>
-                    <!------  LANGUAGE   ----->
-                    <div class="language">
-                        <h3>
-                            <i class="fa-sharp fa-solid fa-earth-americas"></i>
-                            Language
-                        </h3>
-
-                        <p>Français</p>
-                        <div class="contlang">
-                            <div class="lang" style="width: 80%; height: 25px;"></div>
-                        </div>
-
-                        <p>Anglais</p>
-                        <div class="contlang">
-                            <div class="lang" style="width: 50%; height: 25px;"></div>
-                        </div>
-
-                        <p>Néerlandais</p>
-                        <div class="contlang">
-                            <div class="lang" style="width: 25%; height: 25px;"></div>
-                        </div>
-
-                        <p>Lingala</p>
-                        <div class="contlang">
-                            <div class="lang" style="width: 80%; height: 25px;"></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="col-droite">
-                    <!--   Education    -->
-                    <section class="educ">
-                        <h2><i class="fa-solid fa-graduation-cap"> </i> Education</h2>
-                        <div>
-                            <h4 class="annees"> <i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>Front End Developpeur</h3>
-                                <h4>Conception d'interface de site internet</h4>
-                                <ul>
-                                    <li>css</li>
-                                    <li>html</li>
-                                    <li>media</li>
-                                    <li>Intégration Javascript</li>
-                                    <li>SCSS</li>
-                                    <li>GitHub</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>InfoGraphiste</h3>
-                                <h4>Support de communication visuelle</h4>
-                                <p>Typographie, Usage des images, mise en page
-                                    diverses missions graphiques :
-
-                                    design d’un site web
-                                    création d’un logo
-                                    réalisation de flyers
-                                    mise en forme d’une newsletter
-                                    confection des emballages d’un produit
-                                    ébauche d’une carte de visite
-                                    élaboration de visuels pour les réseaux sociaux
-
-                                </p>
-                                <ul>
-                                    <li>Photoshop</li>
-                                    <li>Illustrator</li>
-                                    <li>InDesign</li>
-                                    <li>Canvas</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>Bureautique</h3>
-                                <h4>Rédation web, copywriting, Newsletters, mail</h4>
-                                <ul>
-                                    <li>Word</li>
-                                    <li>Excel</li>
-                                    <li>Google doc</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!--     Expérience   -->
-                    <section class="work-exp">
-                        <h2><i class="fa-solid fa-briefcase espace-icone"> </i> Web Expérience</h2>
-                        <div>
-
-                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>Front End Developpeur</h3>
-                                <h4>fff</h4>
-                                <ul>
-                                    <li>css</li>
-                                    <li>html</li>
-                                    <li>media</li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-
-                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>Front End Developpeur</h3>
-                                <h4>fff</h4>
-                                <ul>
-                                    <li>css</li>
-                                    <li>html</li>
-                                    <li>media</li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-
-                            <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
-                            <div>
-                                <h3>Front End Developpeur</h3>
-                                <h4>fff</h4>
-                                <ul>
-                                    <li>css</li>
-                                    <li>html</li>
-                                    <li>media</li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- hobbies -->
-                    <section class="centres-interets">
-                        <div class="">
-                            <h3>Informatique</h3>
-                            <span>
-                                <ul>
-                                    <li>Codage</li>
-                                    <li>Graphisme</li>
-                                    <li>Developpement web</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="">
-                            <h3>Sport</h3>
-                            <span>
-                                <ul>
-                                    <li>Muay thai</li>
-                                    <li>Boxe Anglaise</li>
-                                    <li>Natation</li>
-                                    <li>Musculation</li>
-                                    <li>Jogging</li>
-                                </ul>
-                            </span>
-                        </div>
-                        <div class="">
-                            <h3>Culture général</h3>
-                            <span>
-                                <ul>
-                                    <li>Philosophie</li>
-                                    <li>Poésie</li>
-                                    <li>Mathématique</li>
-                                    <li>Les Sciences</li>
-                                    <li>L'Histoire</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </section>
-                </section>
+      <!--- MAIN --->
+      <main class="flex--column">
+        <h2 class="center">Page</h2>
+        <!---- conteneur principal ---->
+        <div class="conteneur--cv">
+          <section class="col-gauche">
+            <!-----     Avatar     ----->
+            <figure
+              class="avatar"
+              style="
+                text-align: center;
+                font-weight: bolder;
+                color: #1a00ff;
+                font-size: 40px;
+              "
+            >
+              <img
+                src="images/avatar.jpg"
+                alt=""
+                style="width: 100%; height: auto"
+              />
+              <figcaption><b>Alain L Mbasi </b></figcaption>
+            </figure>
+            <!-----   Info Contact  ---->
+            <div class="info-contact">
+              <p>
+                <i class="fa-solid fa-briefcase espace-icone"></i>Front-end
+                Développeur
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot espace-icone"></i>London UK
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope espace-icone"></i
+                >alain@hfkdjsd.com
+              </p>
+              <p>
+                <i class="fa-solid fa-phone espace-icone"></i>0032 478 56 23 23
+              </p>
             </div>
-        </main>
+            <!------ Skills -------->
+            <div class="skills">
+              <h3 class="espace-titre">
+                <i class="fa-solid fa-asterisk"></i>
+                Skills
+              </h3>
+              <p>HTML, HTML5</p>
+              <div class="contpress">
+                <div class="progress" style="width: 90%">90%</div>
+              </div>
+              <p>CSS</p>
+              <div class="contpress">
+                <div class="progress" style="width: 90%">90%</div>
+              </div>
+              <p>Javascript</p>
+              <div class="contpress">
+                <div class="progress" style="width: 60%">60%</div>
+              </div>
+              <p>Adobe Photoshop</p>
+              <div class="contpress">
+                <div class="progress" style="width: 85%">85%</div>
+              </div>
+              <p>Adobe Illustrator</p>
+              <div class="contpress">
+                <div class="progress" style="width: 70%">70%</div>
+              </div>
+              <p>CMS Word Press</p>
+              <div class="contpress">
+                <div class="progress" style="width: 65%">65%</div>
+              </div>
+            </div>
+            <!------  LANGUAGE   ----->
+            <div class="language">
+              <h3>
+                <i class="fa-sharp fa-solid fa-earth-americas"></i>
+                Language
+              </h3>
 
+              <p>Français</p>
+              <div class="contlang">
+                <div class="lang" style="width: 80%; height: 25px"></div>
+              </div>
 
-        <!-- ---------- FOOTER ---------- -->
-        <footer>
-            <section class="info-coord-legal">
-                <!-- info  -->
-                <div class="info">
-                    <div class="coord card-info">
-                        <h3>Coordonnées</h3>
-                        <div class="card-info__service flex--column">
-                            <p>Rue de Namur, 5</p>
-                            <p>1300 Wavre</p>
-                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
-                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
-                            <a href="https://www.adw.com">www.adw.com</a>
-                        </div>
-                    </div>
-                    <div class="about card-info">
-                        <h3>About us</h3>
-                        <div class="card-info__service flex--column">
-                            <p>
-                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
-                                visibilité sur les réseaux sociaux et sur internet.
-                                une équipe passionnée, jeune et polyvalente.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service card-info">
-                        <h3>Services</h3>
-                        <div class="card-info__service flex--column">
-                            <ul class="card-infol__i-services">
-                                <li>Infographie</li>
-                                <li>Retouche photo</li>
-                                <li>Ergonomie UX UI</li>
-                                <li>Création de site internet</li>
+              <p>Anglais</p>
+              <div class="contlang">
+                <div class="lang" style="width: 50%; height: 25px"></div>
+              </div>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="contact card-info">
-                        <h3>Contact et order</h3>
-                        <div class="card- flex--column">
-                            <ul class="card-infol__i-services">
-                                <li>Devis</li>
-                                <li>Charte Graphique</li>
-                                <li>Maquettage de site web</li>
-                                <li>Marketing</li>
-                            </ul>
-                        </div>
-                    </div>
+              <p>Néerlandais</p>
+              <div class="contlang">
+                <div class="lang" style="width: 25%; height: 25px"></div>
+              </div>
+
+              <p>Lingala</p>
+              <div class="contlang">
+                <div class="lang" style="width: 80%; height: 25px"></div>
+              </div>
+            </div>
+          </section>
+          <section class="col-droite">
+            <!--   Education    -->
+            <section class="educ">
+              <h2><i class="fa-solid fa-graduation-cap"> </i> Education</h2>
+              <div>
+                <h4 class="annees">
+                  <i class="fa-solid fa-calendar-days"> </i> 1222-12222
+                </h4>
+                <div>
+                  <h3>Front End Developpeur</h3>
+                  <h4>Conception d'interface de site internet</h4>
+                  <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>media</li>
+                    <li>Intégration Javascript</li>
+                    <li>SCSS</li>
+                    <li>GitHub</li>
+                  </ul>
                 </div>
-
-                <!-- reseaux  -->
-                <div class="reseaux-sociaux">
-                    <a class="youtube" href="#">
-                        <i class="fa-brands fa-youtube"></i>Youtube
-                    </a>
-                    <a class="instagram" href="#">
-                        <i class="fa-brands fa-square-instagram"></i>Instagram
-                    </a>
-
-                    <a class="facebook" href="#">
-                        <i class="fa-brands fa-square-facebook"></i>facebook
-                    </a>
-
-                    <a class="linkedIn" href="#">
-                        <i class="fa-brands fa-linkedin"></i>LinkedIn
-                    </a>
+              </div>
+              <div>
+                <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                <div>
+                  <h3>InfoGraphiste</h3>
+                  <h4>Support de communication visuelle</h4>
+                  <p>
+                    Typographie, Usage des images, mise en page diverses
+                    missions graphiques : design d’un site web création d’un
+                    logo réalisation de flyers mise en forme d’une newsletter
+                    confection des emballages d’un produit ébauche d’une carte
+                    de visite élaboration de visuels pour les réseaux sociaux
+                  </p>
+                  <ul>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>InDesign</li>
+                    <li>Canvas</li>
+                  </ul>
                 </div>
+              </div>
+              <div>
+                <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                <div>
+                  <h3>Bureautique</h3>
+                  <h4>Rédation web, copywriting, Newsletters, mail</h4>
+                  <ul>
+                    <li>Word</li>
+                    <li>Excel</li>
+                    <li>Google doc</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
 
-                <!-- mentions legales  -->
-                <div class="mentions flex--row">
-                    <a href="#" class="foot--timer__adw">ADW Tech 2023</a>
-                    <!-- <a href="">
+            <!--     Expérience   -->
+            <section class="work-exp">
+              <h2>
+                <i class="fa-solid fa-briefcase espace-icone"> </i> Web
+                Expérience
+              </h2>
+              <div>
+                <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                <div>
+                  <h3>Front End Developpeur</h3>
+                  <h4>fff</h4>
+                  <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>media</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                <div>
+                  <h3>Front End Developpeur</h3>
+                  <h4>fff</h4>
+                  <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>media</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <h4><i class="fa-solid fa-calendar-days"> </i> 1222-12222</h4>
+                <div>
+                  <h3>Front End Developpeur</h3>
+                  <h4>fff</h4>
+                  <ul>
+                    <li>css</li>
+                    <li>html</li>
+                    <li>media</li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- hobbies -->
+            <section class="centres-interets">
+              <div class="">
+                <h3>Informatique</h3>
+                <span>
+                  <ul>
+                    <li>Codage</li>
+                    <li>Graphisme</li>
+                    <li>Developpement web</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="">
+                <h3>Sport</h3>
+                <span>
+                  <ul>
+                    <li>Muay thai</li>
+                    <li>Boxe Anglaise</li>
+                    <li>Natation</li>
+                    <li>Musculation</li>
+                    <li>Jogging</li>
+                  </ul>
+                </span>
+              </div>
+              <div class="">
+                <h3>Culture général</h3>
+                <span>
+                  <ul>
+                    <li>Philosophie</li>
+                    <li>Poésie</li>
+                    <li>Mathématique</li>
+                    <li>Les Sciences</li>
+                    <li>L'Histoire</li>
+                  </ul>
+                </span>
+              </div>
+            </section>
+          </section>
+        </div>
+      </main>
+
+      <!-- ---------- FOOTER ---------- -->
+      <footer>
+        <section class="info-coord-legal">
+          <!-- info  -->
+          <div class="info">
+            <div class="coord card-info">
+              <h3>Coordonnées</h3>
+              <div class="card-info__service flex--column">
+                <p>Rue de Namur, 5</p>
+                <p>1300 Wavre</p>
+                <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                <a href="https://lightaurore.github.io/ADW-Creatif/index.html"
+                  >www.adw.com</a
+                >
+              </div>
+            </div>
+            <div class="about card-info">
+              <h3>About us</h3>
+              <div class="card-info__service flex--column">
+                <p>
+                  ADW Tech crèe des sites internets pour octroyer à votre
+                  société une grande visibilité sur les réseaux sociaux et sur
+                  internet. une équipe passionnée, jeune et polyvalente.
+                </p>
+              </div>
+            </div>
+            <div class="service card-info">
+              <h3>Services</h3>
+              <div class="card-info__service flex--column">
+                <ul class="card-infol__i-services">
+                  <li>Infographie</li>
+                  <li>Retouche photo</li>
+                  <li>Ergonomie UX UI</li>
+                  <li>Création de site internet</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact card-info">
+              <h3>Contact et order</h3>
+              <div class="card- flex--column">
+                <ul class="card-infol__i-services">
+                  <li>Devis</li>
+                  <li>Charte Graphique</li>
+                  <li>Maquettage de site web</li>
+                  <li>Marketing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- reseaux  -->
+          <div class="reseaux-sociaux">
+            <a class="youtube" href="#">
+              <i class="fa-brands fa-youtube"></i>Youtube
+            </a>
+            <a class="instagram" href="#">
+              <i class="fa-brands fa-square-instagram"></i>Instagram
+            </a>
+
+            <a class="facebook" href="#">
+              <i class="fa-brands fa-square-facebook"></i>facebook
+            </a>
+
+            <a class="linkedIn" href="#">
+              <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </a>
+          </div>
+
+          <!-- mentions legales  -->
+          <div class="mentions flex--row">
+            <a href="#" class="foot--timer__adw">ADW Tech 2023</a>
+            <!-- <a href="">
                         <p>terms conditions d'utilisations</p>
                     </a> -->
-                    <a href="mentionsLegales.html" class="mentions-pages">
-                        mentions légales
-                    </a>
-                    <!-- <a href="">
+            <a href="mentionsLegales.html" class="mentions-pages">
+              mentions légales
+            </a>
+            <!-- <a href="">
                         <p>all rights reserved</p>
                     </a> -->
-                </div>
-            </section>
+          </div>
+        </section>
 
-            <section class="footer-nav">
-
-            </section>
-        </footer>
+        <section class="footer-nav"></section>
+      </footer>
     </div>
-    <script type="text/javascript" src="js/javascript.js">
-    </script>
-</body>
-
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
 </html>

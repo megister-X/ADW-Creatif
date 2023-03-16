@@ -1,687 +1,936 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallerie</title>
-    <link rel="stylesheet" href="css/gallerieStyle.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <link rel="stylesheet" href="css/gallerieStyle.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/gallerieStyle.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallerieStyle.css" />
 
-    <link rel="stylesheet" href="css/styletotal.css">
+    <link rel="stylesheet" href="css/styletotal.css" />
 
     <!--Light box-->
     <link href="css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <style>
-        .main--galerie {
-            min-height: 900px;
+      .main--galerie {
+        min-height: 900px;
+      }
+
+      .main--galerie section {
+        background-color: bisque;
+      }
+
+      .main--galerie h2 {
+        background-color: bisque;
+        height: 50px;
+        background-image: url("../realisation/imgIllustratorADW/ADW-banner100vw-02.png");
+      }
+
+      div.images {
+        border: 1px solid #ccc;
+      }
+
+      div.images:hover {
+        border: 1px solid #777;
+      }
+
+      div.images img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive--image {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive--images {
+          width: 49.99999%;
+          margin: 6px 0;
         }
+      }
 
-        .main--galerie section {
-            background-color: bisque;
+      @media only screen and (max-width: 500px) {
+        .responsive--images {
+          width: 100%;
         }
+      }
 
-        .main--galerie h2 {
-            background-color: bisque;
-            height: 50px;
-            background-image: url("../realisation/imgIllustratorADW/ADW-banner100vw-02.png");
-        }
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-        div.images {
-            border: 1px solid #ccc;
-        }
+      .img--ai,
+      .img--ps {
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        min-height: 250px;
+        margin-bottom: 6px;
 
-        div.images:hover {
-            border: 1px solid #777;
-        }
+        height: auto;
+        background-color: bisque;
+        margin: 12px;
+      }
 
-        div.images img {
-            width: 100%;
-            height: auto;
-        }
+      section .images {
+        width: 200px;
+      }
 
-        div.desc {
-            padding: 15px;
-            text-align: center;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .responsive--image {
-            padding: 0 6px;
-            float: left;
-            width: 24.99999%;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .responsive--images {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
-        }
-
-        @media only screen and (max-width: 500px) {
-            .responsive--images {
-                width: 100%;
-            }
-        }
-
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-
-        .img--ai,
-        .img--ps {
-            width: 100%;
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-            min-height: 250px;
-            margin-bottom: 6px;
-
-            height: auto;
-            background-color: bisque;
-            margin: 12px;
-        }
-
-        section .images {
-            width: 200px;
-        }
-
-        .images figure {
-            height: stretch;
-        }
+      .images figure {
+        height: stretch;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <a href="#topnav" class="retourmenu flex--column">
-        <div class="remontemenu--icone"></div>
+      <div class="remontemenu--icone"></div>
     </a>
     <!-- reseaux  -->
     <div class="reseaux-sociaux-lateral flex--column">
-        <a href="#" style="background-color: red;">
-            <img src="images/rs-youtube.png" alt="youtube">
-        </a>
-        <a href="#" style="background-image: linear-gradient(-135deg, violet,violet, red,orange, yellow ) ;">
-            <img src="images/rs-instagram.png" alt="instagram">
-        </a>
+      <a href="#" style="background-color: red">
+        <img src="images/rs-youtube.png" alt="youtube" />
+      </a>
+      <a
+        href="#"
+        style="
+          background-image: linear-gradient(
+            -135deg,
+            violet,
+            violet,
+            red,
+            orange,
+            yellow
+          );
+        "
+      >
+        <img src="images/rs-instagram.png" alt="instagram" />
+      </a>
 
-        <a href="#" style="background-color: blue ;">
-            <img src="images/rs-facebook.png" alt="facebook">
-        </a>
+      <a href="#" style="background-color: blue">
+        <img src="images/rs-facebook.png" alt="facebook" />
+      </a>
 
-        <a href="#" style="background-color: #0808a8;">
-            <img src="images/rs-linkendin.png" alt="linkedin">
-        </a>
+      <a href="#" style="background-color: #0808a8">
+        <img src="images/rs-linkendin.png" alt="linkedin" />
+      </a>
     </div>
     <div class="global flex--column">
-        <!-- ---------- HEADER ---------- -->
-        <header>
-            <!-- <figure class="banner__container">
+      <!-- ---------- HEADER ---------- -->
+      <header>
+        <!-- <figure class="banner__container">
                 <img Srcset="images/ADW-banner640px-04.png 640px images/ADW-banner768vw-04.png 768px images/ADW-banner100vw-03.png 1200px "
                     Sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, 1200px "
                     Src="images/ADW-banner100vw-03.png" alt="ADW Developpeur Designer Web banniere">
             </figure> -->
-            <figure class="logo">
-                <img src="images/adw-logoSite.svg" alt="">
-            </figure>
+        <figure class="logo">
+          <img src="images/adw-logoSite.svg" alt="" />
+        </figure>
 
-            <figure class="header--deco">
-                <img src="images/ADW-deco-Header.png" alt="">
-            </figure>
+        <figure class="header--deco">
+          <img src="images/ADW-deco-Header.png" alt="" />
+        </figure>
+      </header>
 
-        </header>
+      <!-- --------- NAVIGATION ----- -->
+      <div class="navigation">
+        <div class="nav-deco"></div>
+        <div class="sub-nav">
+          <span></span>
+          <nav
+            class="sub-nav__menu myTopnav breadcrumb flat flex--row"
+            id="topnav"
+          >
+            <a href="index.html" class="container active">
+              <figure class="overlayImg">
+                <!-- les icônes utilisées du sites flaticon (stickers) -->
+                <img
+                  src="images/ADW-home-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>home</h3>
+              <div class="overlayText">
+                <p class="text">Notre page d'accueil</p>
+              </div>
+            </a>
+            <a href="about.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-about01-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>ADW</h3>
+              <div class="overlayText">
+                <p class="text">Objectifs, Valeurs, Collaborateurs</p>
+              </div>
+            </a>
 
+            <a href="gallerie.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-gallerie-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Gallerie</h3>
+              <div class="overlayText">
+                <p class="text">Découvrez nos réalisations</p>
+              </div>
+            </a>
 
-        <!-- --------- NAVIGATION ----- -->
-        <div class="navigation">
-            <div class="nav-deco"></div>
-            <div class="sub-nav">
-                <span></span>
-                <nav class="sub-nav__menu myTopnav breadcrumb flat flex--row" id="topnav">
-                    <a href="index.html" class="container active">
-                        <figure class="overlayImg">
-                            <!-- les icônes utilisées du sites flaticon (stickers) -->
-                            <img src="images/ADW-home-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>home</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Notre page d'accueil
-                            </p>
-                        </div>
-                    </a>
-                    <a href="about.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-about01-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>ADW</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Objectifs, Valeurs, Collaborateurs
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="gallerie.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-gallerie-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>Gallerie</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Découvrez nos réalisations
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="cv.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-cv-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>Mon CV</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Découvrez mes formations et mes expériences
-                            </p>
-                        </div>
-                    </a>
-                    <a href="faq.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-faq-icone.svg" alt="" class="nav--image" width="100%" height="auto">
-                        </figure>
-                        <h3>Q & R</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Questions fréquemment posées
-                            </p>
-                        </div>
-                    </a>
-                    <a href="contact.html" class="container">
-                        <figure class="overlayImg">
-                            <img src="images/ADW-contact-icone.svg" alt="" class="nav--image" width="100%"
-                                height="auto">
-                        </figure>
-                        <h3>Contact</h3>
-                        <div class="overlayText">
-                            <p class="text">
-                                Pour plus d'information,
-                                Laissez nous un message.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </nav>
-            </div>
+            <a href="cv.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-cv-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Mon CV</h3>
+              <div class="overlayText">
+                <p class="text">Découvrez mes formations et mes expériences</p>
+              </div>
+            </a>
+            <a href="faq.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-faq-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Q & R</h3>
+              <div class="overlayText">
+                <p class="text">Questions fréquemment posées</p>
+              </div>
+            </a>
+            <a href="contact.html" class="container">
+              <figure class="overlayImg">
+                <img
+                  src="images/ADW-contact-icone.svg"
+                  alt=""
+                  class="nav--image"
+                  width="100%"
+                  height="auto"
+                />
+              </figure>
+              <h3>Contact</h3>
+              <div class="overlayText">
+                <p class="text">
+                  Pour plus d'information, Laissez nous un message.
+                </p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
         </div>
-        <!-- Principal -->
-        <main class="main--gallerie">
-            <!-- ILLUSTRATOR IMAGES -->
-            <h2>Illustrator</h2>
-            <section class=" gallery img--ai"> <!--   -->
-                <!-- <a href="realisation/imgIllustratorADW/AfficheA.png" data-lightbox="roadtrip" data-title="My caption">
+      </div>
+      <!-- Principal -->
+      <main class="main--gallerie">
+        <!-- ILLUSTRATOR IMAGES -->
+        <h2>Illustrator</h2>
+        <section class="gallery img--ai">
+          <!--   -->
+          <!-- <a href="realisation/imgIllustratorADW/AfficheA.png" data-lightbox="roadtrip" data-title="My caption">
                     <figure>
                         <img src="realisation/imgIllustratorADW/AfficheA.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </a> -->
 
-                <a href="realisation/imgIllustratorADW/chantAllegresse.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/chantAllegresse.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/chantAllegresse.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgIllustratorADW/chantAllegresse.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/banjo1.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/banjo1.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/banjo1.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/banjo1.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/basket-club.png" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/basket-club.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/basket-club.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/basket-club.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/glace01.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/glace01.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/glace01.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/glace01.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/goldorak01.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/goldorak01.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/goldorak01.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/goldorak01.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/milk02.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/milk02.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/milk02.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/milk02.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/mister-patate1.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/mister-patate1.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/mister-patate1.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgIllustratorADW/mister-patate1.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/mrPatate01.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/mrPatate01.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/mrPatate01.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/mrPatate01.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/oeuf1.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/oeuf1.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/oeuf1.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/oeuf1.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/Ours.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/Ours.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/Ours.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/Ours.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/Ours1fit.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/Ours1fit.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/Ours1fit.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/Ours1fit.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/VisageFemme05.jpg.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/VisageFemme05.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/VisageFemme05.jpg.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgIllustratorADW/VisageFemme05.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/poissonsAqua01.png" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/poissonsAqua01.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/poissonsAqua01.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgIllustratorADW/poissonsAqua01.png"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/skull.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/skull.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
+          <a
+            href="realisation/imgIllustratorADW/skull.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/skull.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
 
-                <a href="realisation/imgIllustratorADW/yeti02.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgIllustratorADW/yeti02.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-            </section>
+          <a
+            href="realisation/imgIllustratorADW/yeti02.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgIllustratorADW/yeti02.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+        </section>
 
-            <!-- PHOTOSHOP IMAGES -->
-            <h2>Photoshop</h2>
-            <section class="gallery img--ps">
-                <a href="realisation/imgPhotoshopADW/Afficche.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/Afficche.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <!-- <a href="realisation/imgPhotoshopADW/Affiche.jpg" data-lightbox="roadtrip" data-title="My caption">
+        <!-- PHOTOSHOP IMAGES -->
+        <h2>Photoshop</h2>
+        <section class="gallery img--ps">
+          <a
+            href="realisation/imgPhotoshopADW/Afficche.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/Afficche.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <!-- <a href="realisation/imgPhotoshopADW/Affiche.jpg" data-lightbox="roadtrip" data-title="My caption">
                     <figure>
                         <img src="realisation/imgPhotoshopADW/Affiche.jpg" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </a> -->
-                <a href="realisation/imgPhotoshopADW/archi-01a.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/archi-01a.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/avatar.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/avatar.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/brushPersonnaliser.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/brushPersonnaliser.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/ciel-etoilesMultipleSrc.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/ciel-etoilesMultipleSrc.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/danseur.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/danseur.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/decoupageT.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/decoupageT.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/EcretageTexte.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/EcretageTexte.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/effetCouper.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/effetCouper.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/femme-dessin.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/femme-dessin.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/femmeTampon.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/femmeTampon.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/gouttesDoubles.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/gouttesDoubles.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/hallo.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/hallo.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/instaVoga.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/instaVoga.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/logovoga.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/logovoga.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/mabiche.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/mabiche.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/mesMotifs.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/mesMotifs.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/model.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/model.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/montgolfière.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/montgolfière.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/mountainHoney.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/mountainHoney.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/PaonPlume.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/PaonPlume.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/Paysage.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/Paysage.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/pink-hair-sky.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/pink-hair-sky.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/poteau1.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/poteau1.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/sourire.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/sourire.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/Symetriques.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/Symetriques.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/Tranches01.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/Tranches01.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/TRANPAM.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/TRANPAM.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/villeCascade.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/villeCascade.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/vinyle01.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/vinyle01.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/visageFemme04.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/visageFemme04.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/visageLettre.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/visageLettre.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/VOGA.png" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/VOGA.png" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/womanSerpentine1.jpg" data-lightbox="roadtrip"
-                    data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/womanSerpentine1.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-                <a href="realisation/imgPhotoshopADW/peauEcorchee.jpg" data-lightbox="roadtrip" data-title="My caption">
-                    <figure>
-                        <img src="realisation/imgPhotoshopADW/peauEcorchee.jpg" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </a>
-            </section>
-        </main>
+          <a
+            href="realisation/imgPhotoshopADW/archi-01a.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/archi-01a.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/avatar.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/avatar.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/brushPersonnaliser.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgPhotoshopADW/brushPersonnaliser.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/ciel-etoilesMultipleSrc.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgPhotoshopADW/ciel-etoilesMultipleSrc.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/danseur.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/danseur.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/decoupageT.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/decoupageT.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/EcretageTexte.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/EcretageTexte.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/effetCouper.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/effetCouper.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/femme-dessin.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/femme-dessin.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/femmeTampon.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/femmeTampon.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/gouttesDoubles.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgPhotoshopADW/gouttesDoubles.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/hallo.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/hallo.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/instaVoga.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/instaVoga.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/logovoga.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/logovoga.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/mabiche.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/mabiche.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/mesMotifs.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/mesMotifs.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/model.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/model.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/montgolfière.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/montgolfière.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/mountainHoney.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/mountainHoney.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/PaonPlume.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/PaonPlume.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/Paysage.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/Paysage.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/pink-hair-sky.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/pink-hair-sky.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/poteau1.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/poteau1.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/sourire.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/sourire.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/Symetriques.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/Symetriques.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/Tranches01.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/Tranches01.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/TRANPAM.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/TRANPAM.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/villeCascade.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/villeCascade.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/vinyle01.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/vinyle01.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/visageFemme04.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/visageFemme04.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/visageLettre.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/visageLettre.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/VOGA.png"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/VOGA.png" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/womanSerpentine1.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img
+                src="realisation/imgPhotoshopADW/womanSerpentine1.jpg"
+                alt=""
+              />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a
+            href="realisation/imgPhotoshopADW/peauEcorchee.jpg"
+            data-lightbox="roadtrip"
+            data-title="My caption"
+          >
+            <figure>
+              <img src="realisation/imgPhotoshopADW/peauEcorchee.jpg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+        </section>
+      </main>
 
-        <!-- ---------- FOOTER ---------- -->
-        <footer>
-            <section class="info-coord-legal">
-                <!-- info  -->
-                <div class="info">
-                    <div class="coord card-info">
-                        <h3>Coordonnées</h3>
-                        <div class="card-info__service flex--column">
-                            <p>Rue de Namur, 5</p>
-                            <p>1300 Wavre</p>
-                            <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
-                            <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
-                            <a href="https://www.adw.com">www.adw.com</a>
-                        </div>
-                    </div>
-                    <div class="about card-info">
-                        <h3>About us</h3>
-                        <div class="card-info__service flex--column">
-                            <p>
-                                ADW Tech crèe des sites internets pour octroyer à votre société une grande
-                                visibilité sur les réseaux sociaux et sur internet.
-                                une équipe passionnée, jeune et polyvalente.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="service card-info">
-                        <h3>Services</h3>
-                        <div class="card-info__service flex--column">
-                            <ul class="card-infol__i-services">
-                                <li>Infographie</li>
-                                <li>Retouche photo</li>
-                                <li>Ergonomie UX UI</li>
-                                <li>Création de site internet</li>
+      <!-- ---------- FOOTER ---------- -->
+      <footer>
+        <section class="info-coord-legal">
+          <!-- info  -->
+          <div class="info">
+            <div class="coord card-info">
+              <h3>Coordonnées</h3>
+              <div class="card-info__service flex--column">
+                <p>Rue de Namur, 5</p>
+                <p>1300 Wavre</p>
+                <a href="tel:+32 476 45 75 36">+32 476 45 75 36</a>
+                <a href="maito:info-adw@adw.com">info-adw@adw.com</a>
+                <a href="https://lightaurore.github.io/ADW-Creatif/index.html"
+                  >www.adw.com</a
+                >
+              </div>
+            </div>
+            <div class="about card-info">
+              <h3>About us</h3>
+              <div class="card-info__service flex--column">
+                <p>
+                  ADW Tech crèe des sites internets pour octroyer à votre
+                  société une grande visibilité sur les réseaux sociaux et sur
+                  internet. une équipe passionnée, jeune et polyvalente.
+                </p>
+              </div>
+            </div>
+            <div class="service card-info">
+              <h3>Services</h3>
+              <div class="card-info__service flex--column">
+                <ul class="card-infol__i-services">
+                  <li>Infographie</li>
+                  <li>Retouche photo</li>
+                  <li>Ergonomie UX UI</li>
+                  <li>Création de site internet</li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact card-info">
+              <h3>Contact et order</h3>
+              <div class="card- flex--column">
+                <ul class="card-infol__i-services">
+                  <li>Devis</li>
+                  <li>Charte Graphique</li>
+                  <li>Maquettage de site web</li>
+                  <li>Marketing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="contact card-info">
-                        <h3>Contact et order</h3>
-                        <div class="card- flex--column">
-                            <ul class="card-infol__i-services">
-                                <li>Devis</li>
-                                <li>Charte Graphique</li>
-                                <li>Maquettage de site web</li>
-                                <li>Marketing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          <!-- reseaux  -->
+          <div class="reseaux-sociaux">
+            <a class="youtube" href="#">
+              <i class="fa-brands fa-youtube"></i>Youtube
+            </a>
+            <a class="instagram" href="#">
+              <i class="fa-brands fa-square-instagram"></i>Instagram
+            </a>
 
-                <!-- reseaux  -->
-                <div class="reseaux-sociaux">
-                    <a class="youtube" href="#">
-                        <i class="fa-brands fa-youtube"></i>Youtube
-                    </a>
-                    <a class="instagram" href="#">
-                        <i class="fa-brands fa-square-instagram"></i>Instagram
-                    </a>
+            <a class="facebook" href="#">
+              <i class="fa-brands fa-square-facebook"></i>facebook
+            </a>
 
-                    <a class="facebook" href="#">
-                        <i class="fa-brands fa-square-facebook"></i>facebook
-                    </a>
+            <a class="linkedIn" href="#">
+              <i class="fa-brands fa-linkedin"></i>LinkedIn
+            </a>
+          </div>
 
-                    <a class="linkedIn" href="#">
-                        <i class="fa-brands fa-linkedin"></i>LinkedIn
-                    </a>
-                </div>
-
-                <!-- mentions legales  -->
-                <div class="mentions flex--row">
-                    <a href="#" class="foot--timer__adw">ADW Tech 2023</a>
-                    <!-- <a href="">
+          <!-- mentions legales  -->
+          <div class="mentions flex--row">
+            <a href="#" class="foot--timer__adw">ADW Tech 2023</a>
+            <!-- <a href="">
                         <p>terms conditions d'utilisations</p>
                     </a> -->
-                    <a href="mentionsLegales.html" class="mentions-pages">
-                        <p>mentions légales</p>
-                    </a>
-                    <!-- <a href="">
+            <a href="mentionsLegales.html" class="mentions-pages">
+              <p>mentions légales</p>
+            </a>
+            <!-- <a href="">
                         <p>all rights reserved</p>
                     </a> -->
-                </div>
-            </section>
+          </div>
+        </section>
 
-            <section class="footer-nav">
-
-            </section>
-        </footer>
+        <section class="footer-nav"></section>
+      </footer>
     </div>
 
     <!--Light box-->
     <script src="js/lightbox.js"></script>
     <script src="js/lightbox-plus-jquery.js"></script>
-    <script type="text/javascript" src="js/javascript.js">
-    </script>
-</body>
-
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </body>
 </html>
