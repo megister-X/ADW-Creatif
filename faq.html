@@ -22,7 +22,7 @@
         transition: 0.4s;
       }
 
-      .faq--accordion--question::before,
+      /* .faq--accordion--question::before,
       .faq--accordion--question::after {
         position: absolute;
         content: " ";
@@ -47,9 +47,9 @@
         /* content: "click me";
             onclick: "my_function()"; */
         onclick: rotate(100deg);
-      }
+      } */
 
-      .active,
+      .active1,
       .faq--accordion--question:hover {
         background-color: #0ffff0;
       }
@@ -238,7 +238,7 @@
             ADW a mis sur cette page des réponses à des questions que nos
             clients se posent le plus souvent.
             <br />
-            Nous espéront qu'elles vous serons utiles.
+            Nous espérons qu'elles vous seront utiles.
           </p>
         </div>
 
@@ -368,7 +368,7 @@
 
       for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+          this.classList.toggle("active1");
           var panel = this.nextElementSibling;
           if (panel.style.display === "block") {
             panel.style.display = "none";

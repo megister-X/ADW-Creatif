@@ -344,7 +344,6 @@ header .header--deco{
 	display: grid;
 	grid-template-columns: 1fr 70%;
 	width: 100%;
-	z-index: 9;
 }
 .sub-nav__menu {
 	position: sticky;
@@ -352,7 +351,7 @@ header .header--deco{
 	height: 250px;
 	margin-top: 150px;
 	background-color: transparent;
-	z-index: 1;
+	z-index: 999;
 	background-attachment: fixed;
 }
 /* overlay nav rubrique */
@@ -366,7 +365,6 @@ header .header--deco{
 	text-align: center;
 	column-gap: 7px;
 	margin: 2px;
-	z-index: 999;
 }
 .overlayImg {
 	position: absolute;
@@ -474,7 +472,7 @@ p.text {
 	background-color: transparent;
 	/* background-image: url("../images/services-adw-banner.png"); */
 	background-clip: padding-box;
-	z-index: 999;
+	z-index: 99;
 }
 .container__services h2 {
 	color: #1b1464;
