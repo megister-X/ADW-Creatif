@@ -206,6 +206,12 @@ input[submit] {
 	justify-content: space-around;
 	align-items: center;
 }
+.flex--space__between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 /*-------------------------*\
 		BODY
 \*-------------------------*/
@@ -466,7 +472,8 @@ p.text {
 	width: 100%;
 	top: 0px;
 	background-color: transparent;
-/*	background-image: url("../images/services-adw-banner.png");*/
+	/* background-image: url("../images/services-adw-banner.png"); */
+	background-clip: padding-box;
 	z-index: 999;
 }
 .container__services h2 {
@@ -522,7 +529,7 @@ p.text {
 \*-------------------------*/
 .presentation{
 	width: 100%;
-	min-height: 900px;
+	min-height: 450px;
 	margin-bottom: 12px;
 	background-color: #0c0ca7;
 	/*	overflow: hidden;*/
