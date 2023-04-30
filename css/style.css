@@ -448,7 +448,7 @@ p.text {
 	color: black;
 }
 .myTopnav a.active {
-	background-color: #04AA6D;
+	background-color: var(--orange);
 	color: blue;
 }
 .myTopnav .icon {
