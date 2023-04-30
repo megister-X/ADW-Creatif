@@ -288,6 +288,9 @@ header .logo{
 	width: 400px;
 	z-index: 0;
 }
+header .logo img{
+	width: 100%
+}
 header .header--deco{
 	width: 300px;
 	z-index: 0;
