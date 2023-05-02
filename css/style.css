@@ -398,6 +398,7 @@ figure .nav--image {
 .container:hover>.overlayImg {
 	bottom: 100%;
 	height: 100px;
+	padding-block: 12px;
 	z-index: 9999;
 }
 .overlayText {
@@ -416,7 +417,7 @@ figure .nav--image {
 .container:hover>.overlayText {
 	bottom: 0;
 	min-height: 100px;
-	padding-top: 34px;
+	padding-block: 43px;
 	z-index: 999999;
 }
 .container h3 {
