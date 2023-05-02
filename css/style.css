@@ -387,6 +387,7 @@ header .header--deco{
 	width: 80%;
 	height: auto;
 	clip-path: border-box;
+	object-fit: cover;
 }
 figure .nav--image {
 	position: absolute;
