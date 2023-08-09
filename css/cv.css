@@ -16,6 +16,8 @@ p {
 }
 
 .animation--metiers {
+  display: flex;
+  flex-direction: column;
   height: 2.81rem;
   overflow: hidden;
   /*    border: 1px solid black;*/
