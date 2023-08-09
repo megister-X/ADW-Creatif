@@ -25,14 +25,19 @@ p {
   height: 2.81rem;
   width: 400px;
 }
+.animation--metiers > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto 0.75rem;
+  height: 100%;
+  width: 100%;
+}
 .animation--metiers > div:first-child {
   margin-top: 0rem;
 }
 .animation--metiers > div > div {
   display: inline-block;
-  justify-content: center;
-  align-items: center;
-  padding: auto 0.75rem;
   height: 100%;
   width: 100%;
   text-align: center;
