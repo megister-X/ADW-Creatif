@@ -34,7 +34,8 @@ p {
   text-align: center;
 }
 
-.animation--metiers div:first-child {
+/* .animation--metiers div:first-child { */
+.animation--metiers div{
   top: 0rem;
   animation: text-animation 8s infinite;
 }
