@@ -22,15 +22,18 @@ p {
   padding-top: 0rem;
   background-color: red;
   position: relative;
+  height: 2.81rem;
+  width: 400px;
 }
 .animation--metiers > div:first-child {
   margin-top: 2.81rem;
 }
-.animation--metiers > div > div {
+/* .animation--metiers > div > div { */
+.animation--metiers > div {
   display: inline-block;
   padding: auto 0.75rem;
-  height: 2.81rem;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 
