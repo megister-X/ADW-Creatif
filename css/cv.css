@@ -28,9 +28,10 @@ p {
 .animation--metiers > div:first-child {
   margin-top: 2.81rem;
 }
-/* .animation--metiers > div > div { */
-.animation--metiers > div {
+.animation--metiers > div > div {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: auto 0.75rem;
   height: 100%;
   width: 100%;
