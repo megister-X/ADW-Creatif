@@ -18,7 +18,6 @@ p {
 .animation--metiers {
   display: flex;
   flex-direction: column;
-  height: 2.81rem;
   overflow: hidden;
   /*    border: 1px solid black;*/
   padding-top: 0rem;
@@ -33,21 +32,23 @@ p {
   align-items: center;
   /* padding: auto 0.75rem; */
   padding: 0;
-  height: 100%;
+  height: 2.81rem;
   width: 100%;
 }
-.animation--metiers > div:first-child {
+/* .animation--metiers > div:first-child {
   margin-top: 0rem;
-}
+} */
 .animation--metiers > div > div {
   display: inline-block;
-  height: 100%;
+  height: 2.81rem;
   width: 100%;
   text-align: center;
+  padding-block: 0.4rem;
 }
 
 /* .animation--metiers div:first-child { */
 .animation--metiers div:first-child {
+  margin-top: 2.81rem;
   top: 0rem;
   animation: text-animation 8s infinite;
 }
@@ -69,14 +70,30 @@ p {
   }
   33.33%,
   60.33% {
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
   66.66%,
   93.66% {
-    transform: translateY(200%);
+    transform: translateY(-200%);
   }
   100% {
-    transform: translateY(300%);
+    transform: translateY(-300%);
+  }
+  100%,
+  93.66% {
+    transform: translateY(-300%);
+  }
+  93.66%,
+  66.66% {
+    transform: translateY(-200%);
+  }
+  60.33%,
+  33.33% {
+    transform: translateY(-100%);
+  }
+  27%,
+  0 {
+    transform: translateY(3);
   }
 }
 /* @keyframes text-animation{
